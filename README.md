@@ -28,12 +28,12 @@ I'm a Filipino aspiring developer with a wide network due to my friendly charact
 
 #
 
-### 💼 Curriculum Vitae
-
-<img align="Curriculum Vitae" alt="Java" width="1000px" style="padding:10px;" src="https://scontent.fceb2-1.fna.fbcdn.net/v/t1.15752-9/448710985_1185175329330200_1401376860171066479_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeF1BAgOWXLyIzAexUUDsUwkvawbjgJ5n5i9rBuOAnmfmHzk8jNVwrPMZe1T881b7HcmDuzv0THPt-c_Z5Yml6hk&_nc_ohc=CkWwP-_xtigQ7kNvgF7qGJp&_nc_ht=scontent.fceb2-1.fna&oh=03_Q7cD1QGPujBP9IbWU5T_ByiFVsgP4OuLCd_lmS-HB55iSXmDRQ&oe=66AB95FE"/>
-
-#
-
 ### 📊 Stats
 
 ![Jiv's GitHub stats](https://github-readme-stats.vercel.app/api?username=jivstuban&show_icons=true&theme=gruvbox)
+
+#
+
+### 💼 Curriculum Vitae
+
+<img align="Curriculum Vitae" alt="Java" width="1000px" style="padding:10px;" src="https://scontent.fceb2-1.fna.fbcdn.net/v/t1.15752-9/448710985_1185175329330200_1401376860171066479_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeF1BAgOWXLyIzAexUUDsUwkvawbjgJ5n5i9rBuOAnmfmHzk8jNVwrPMZe1T881b7HcmDuzv0THPt-c_Z5Yml6hk&_nc_ohc=CkWwP-_xtigQ7kNvgF7qGJp&_nc_ht=scontent.fceb2-1.fna&oh=03_Q7cD1QGPujBP9IbWU5T_ByiFVsgP4OuLCd_lmS-HB55iSXmDRQ&oe=66AB95FE"/>
