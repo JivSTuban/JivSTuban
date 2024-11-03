@@ -34,8 +34,10 @@ I am a Filipino aspiring web developer known for my friendly demeanor, good humo
 ![Jiv's GitHub stats](https://github-readme-stats.vercel.app/api?username=jivstuban&show_icons=true&theme=gruvbox)
 
 #
+### 💼 Portfolio and Curriculum Vitae 
 
-### 💼 Curriculum Vitae
+[*Portfolio*](jivstuban.me)
 
-[*Click here!*](https://github.com/JivSTuban/JivSTuban/raw/main/Tuban_CV.pdf)
+[*Curriculum Vitae*](https://github.com/JivSTuban/JivSTuban/raw/main/Tuban_CV.pdf)
+
 
