@@ -36,7 +36,7 @@ I am a Filipino aspiring web developer known for my friendly demeanor, good humo
 #
 ### 💼 Portfolio and Curriculum Vitae 
 
-[*Click here to open My Portfolio*]([jivstuban.me](https://jivstuban.me))
+[*Click here to open My Portfolio*](https://jivstuban.me)
 
 [*Click here to download My Curriculum Vitae*](https://github.com/JivSTuban/JivSTuban/raw/main/Tuban_CV.pdf)
 
