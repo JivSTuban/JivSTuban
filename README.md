@@ -2,7 +2,7 @@
 
 **`Unemployed Multifaceted Polymath Digital Architect`**
 
-I am a Filipino aspiring web developer known for my friendly demeanor, good humor, and easy-going vibe, which has helped me build a wide and diverse network. Being single and currently unemployed, I channel my time and energy into coding, continuous learning, and maintaining my fitness. My dedication to these areas reflects my commitment to becoming a highly skilled programmer.
+Full-stack web developer specializing in creating intuitive user experiences and robust backend systems. Proven track record in building efficient web solutions. Strong problem-solving skills with a focus on writing clean, maintainable code. Enthusiastic team player who thrives in collaborative environments and stays current with emerging technologies.
 
 <hr>
 
