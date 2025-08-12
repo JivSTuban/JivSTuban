@@ -1,6 +1,6 @@
 # 🚴‍♂️ Jiv Tuban
 
-**`Unemployed Multifaceted Polymath Digital Architect`**
+**`Multifaceted Polymath Digital Architect`**
 
 Full-stack web developer specializing in creating intuitive user experiences and robust backend systems. Proven track record in building efficient web solutions. Strong problem-solving skills with a focus on writing clean, maintainable code. Enthusiastic team player who thrives in collaborative environments and stays current with emerging technologies.
 
