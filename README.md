@@ -38,6 +38,6 @@ Full-stack web developer specializing in creating intuitive user experiences and
 
 [*Click here to open My Portfolio*](https://jivstuban.me)
 
-[*Click here to open My Resume*](https://media.onlinejobs.ph/jobseekers_resumes/898ca7c4aa09b6e8a85eea42964aa222.pdf)
+[*Click here to open My Resume*]([https://media.onlinejobs.ph/jobseekers_resumes/898ca7c4aa09b6e8a85eea42964aa222.pdf](https://media.onlinejobs.ph/jobseekers_resumes/e353f348b3ae41331ad4c77b3a29b6d4.pdf))
 
 
