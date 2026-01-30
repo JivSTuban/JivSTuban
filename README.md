@@ -1,72 +1,58 @@
-```
-     ██╗██╗██╗   ██╗    ████████╗██╗   ██╗██████╗  █████╗ ███╗   ██╗
-     ██║██║██║   ██║    ╚══██╔══╝██║   ██║██╔══██╗██╔══██╗████╗  ██║
-     ██║██║██║   ██║       ██║   ██║   ██║██████╔╝███████║██╔██╗ ██║
-██   ██║██║╚██╗ ██╔╝       ██║   ██║   ██║██╔══██╗██╔══██║██║╚██╗██║
-╚█████╔╝██║ ╚████╔╝        ██║   ╚██████╔╝██████╔╝██║  ██║██║ ╚████║
- ╚════╝ ╚═╝  ╚═══╝         ╚═╝    ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝
-```
-
 <div align="center">
 
-### `console.log("hello, world");`
+<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=600&size=40&duration=4000&pause=1000&color=FFFFFF&center=true&vCenter=true&repeat=false&width=500&height=70&lines=Jiv+Tuban" alt="Name" />
 
-**CTO @ Crowdsnare AI & Rev AI** · Cebu, Philippines 🇵🇭
+<sub>software engineer · ai enthusiast · cebu 🇵🇭</sub>
+
+<br/><br/>
+
+```
+☕ fueled by mass amounts of coffee
+🎯 building things at crowdsnare ai & rev ai  
+🔮 making machines think (sometimes)
+```
 
 <br/>
 
-I make computers do things they probably shouldn't.  
-Specializing in **full-stack sorcery**, **AI automation**, and **turning caffeine into code**.
+---
 
 <br/>
 
-[`🌐 portfolio`](https://farfolio.vercel.app) · [`💼 linkedin`](https://linkedin.com/in/jiv-tuban) · [`📬 email`](mailto:jivtuban14@gmail.com)
+**stack i vibe with**
 
-</div>
+`react` · `typescript` · `python` · `django` · `laravel` · `postgresql`
 
----
-
-### `> cat skills.txt`
-
-```javascript
-const jiv = {
-  languages: ["TypeScript", "Python", "Java", "PHP", "C#"],
-  frontend:  ["React", "Tailwind", "Vite"],
-  backend:   ["Django", "Laravel", "Spring Boot", ".NET"],
-  databases: ["PostgreSQL", "MySQL", "Supabase"],
-  tools:     ["Docker", "Git", "n8n", "Make"],
-  currently: "Building AI-powered workflows that automate everything"
-};
-```
+<br/>
 
 ---
 
-### `> ls projects/`
+<br/>
 
-| Project | Description |
-|---------|-------------|
-| [**KailasCakesAndPastries**](https://github.com/JivSTuban/KailasCakesAndPastries) | Commissioned bakery website |
-| [**austin**](https://github.com/JivSTuban/austin) | Professional portfolio for a client |
-| [**TJ-Human-Resource**](https://github.com/JivSTuban/TJ-Human-Resource) | Django HR management system |
-| [**IT342_Navigram**](https://github.com/JivSTuban/IT342_Navigram) | Mobile social platform |
+**things i've made**
 
----
+<br/>
 
-### `> fortune`
+[bakery website](https://github.com/JivSTuban/KailasCakesAndPastries) ↗  
+*e-commerce for local business*
 
-```
-┌────────────────────────────────────────────────────────────┐
-│  "First, solve the problem. Then, write the code."         │
-│                                          — John Johnson    │
-└────────────────────────────────────────────────────────────┘
-```
+[portfolio site](https://github.com/JivSTuban/austin) ↗  
+*professional portfolio for a client*
+
+[hr system](https://github.com/JivSTuban/TJ-Human-Resource) ↗  
+*employee management platform*
+
+<br/>
 
 ---
 
-<div align="center">
+<br/>
 
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=JivSTuban.JivSTuban&left_color=black&right_color=green)
+**let's connect**
 
-**`> exit 0`**
+[portfolio](https://farfolio.vercel.app) · [linkedin](https://linkedin.com/in/jiv-tuban) · [email](mailto:jivtuban14@gmail.com)
+
+<br/><br/>
+
+<sub>*currently mass destruction my sleep schedule*</sub>
 
 </div>
