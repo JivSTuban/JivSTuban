@@ -36,9 +36,9 @@
 ```javascript
 const jiv = {
     location: "Lapu-Lapu City, Cebu, Philippines 🇵🇭",
-    currentRole: "Full-Stack Developer @ Crewverse AI",
-    education: "Computer Science",
-    interests: ["Web Development", "System Design", "Open Source"],
+    currentRole: "Chief Technological Officer @ Crowdsnare AI & Rev AI",
+    education: "Information Technology",
+    interests: ["Web Development", "System Design", "AI/workflow Automation"],
     funFact: "I debug with console.log and I'm not ashamed 😄"
 };
 ```
