@@ -1,29 +1,51 @@
 <div align="center">
-  
-<!-- Animated Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Jiv%20Tuban&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Full-Stack%20Developer%20%7C%20AI%20Automation%20Engineer&descAlignY=52&descSize=18"/>
 
-<!-- Typing SVG -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6AD3F7&center=true&vCenter=true&random=false&width=600&lines=Building+intuitive+user+experiences;Crafting+robust+backend+systems;Turning+ideas+into+reality;Always+learning%2C+always+growing)](https://git.io/typing-svg)
+<!-- Space Header -->
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0d0221,50:0a1628,100:1a0a2e&height=200&section=header&text=JIV%20TUBAN&fontSize=60&fontColor=a855f7&animation=fadeIn&fontAlignY=35&desc=◈%20TRANSMISSION%20FROM%20SECTOR%207G%20◈&descAlignY=55&descSize=14&descColor=6366f1"/>
 
-<!-- Profile Views & Followers -->
+```
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  ██████╗████████╗ ██████╗     ██╗     █████╗  ██████╗  ██████╗ ███████╗      ║
+║ ██╔════╝╚══██╔══╝██╔═══██╗   ██╔╝    ██╔══██╗██╔═══██╗██╔════╝ ██╔════╝      ║
+║ ██║        ██║   ██║   ██║  ██╔╝     ███████║██║   ██║██║  ███╗█████╗        ║
+║ ██║        ██║   ██║   ██║ ██╔╝      ██╔══██║██║   ██║██║   ██║██╔══╝        ║
+║ ╚██████╗   ██║   ╚██████╔╝██╔╝       ██║  ██║╚██████╔╝╚██████╔╝███████╗      ║
+║  ╚═════╝   ╚═╝    ╚═════╝ ╚═╝        ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝      ║
+║                                                                              ║
+║          「 CROWDSNARE AI  ·  REV AI  ·  AI AUTOMATION ENGINEER 」            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+```
+
+<!-- Typing Animation -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=500&size=22&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=700&height=80&lines=%E2%96%B8+Architecting+digital+ecosystems+across+the+void;%E2%96%B8+Building+AI+systems+that+transcend+boundaries;%E2%96%B8+Full-stack+voyager+exploring+infinite+code" alt="Typing SVG" />
+</a>
+
+<br/>
+
+<!-- Badges -->
 <p>
-  <img src="https://komarev.com/ghpvc/?username=JivSTuban&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="Profile Views"/>
+  <img src="https://komarev.com/ghpvc/?username=JivSTuban&label=SCANS&color=blueviolet&style=for-the-badge" alt="Profile Views"/>
+  &nbsp;
   <a href="https://github.com/JivSTuban?tab=followers">
-    <img src="https://img.shields.io/github/followers/JivSTuban?label=Followers&style=for-the-badge&color=blue" alt="Followers"/>
+    <img src="https://img.shields.io/github/followers/JivSTuban?label=CREW&style=for-the-badge&color=8b5cf6&labelColor=1e1b4b" alt="Followers"/>
   </a>
+  &nbsp;
+  <img src="https://img.shields.io/badge/STATUS-ONLINE-00ff00?style=for-the-badge&labelColor=1e1b4b" alt="Status"/>
 </p>
 
-<!-- Social Links -->
+<!-- Navigation Links -->
 <p>
-  <a href="https://farfolio.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio"/>
+  <a href="https://farfolio.vercel.app">
+    <img src="https://img.shields.io/badge/⚡_PORTFOLIO-1e1b4b?style=for-the-badge&logo=vercel&logoColor=a855f7" alt="Portfolio"/>
   </a>
-  <a href="https://linkedin.com/in/jiv-tuban" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  &nbsp;
+  <a href="https://linkedin.com/in/jiv-tuban">
+    <img src="https://img.shields.io/badge/📡_LINKEDIN-1e1b4b?style=for-the-badge&logo=linkedin&logoColor=6366f1" alt="LinkedIn"/>
   </a>
+  &nbsp;
   <a href="mailto:jivtuban14@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+    <img src="https://img.shields.io/badge/📨_TRANSMIT-1e1b4b?style=for-the-badge&logo=gmail&logoColor=ec4899" alt="Email"/>
   </a>
 </p>
 
@@ -31,133 +53,209 @@
 
 ---
 
-## 👨‍💻 About Me
+<img align="right" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWt6ZnVpOGVyMXRxdnRqeHVjbTIxbW1lcXNkcnJ6YnY5cGVqNDdvZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oKIPtjElfqwMOTbH2/giphy.gif" width="280"/>
 
-```javascript
-const jiv = {
-    location: "Lapu-Lapu City, Cebu, Philippines 🇵🇭",
-    currentRole: "Chief Technological Officer @ Crowdsnare AI & Rev AI",
-    education: "Information Technology",
-    interests: ["Web Development", "System Design", "AI/workflow Automation"],
-    funFact: "I debug with console.log and I'm not ashamed 😄"
+## 🛸 `PILOT_PROFILE.log`
+
+```js
+/**
+ * @spacecraft  Crowdsnare AI / Rev AI
+ * @coordinates Lapu-Lapu City, Cebu, Philippines 🇵🇭
+ * @mission     Digital Architect & AI Systems Engineer
+ */
+
+const pilot = {
+  designation: "Jiv Tuban",
+  rank: "Chief Technology Officer",
+  specialization: [
+    "Full-Stack Development",
+    "AI/ML Integration", 
+    "Workflow Automation",
+    "System Architecture"
+  ],
+  currentMission: "Building AI-powered solutions",
+  yearsInOrbit: new Date().getFullYear() - 2021,
+  status: "🟢 OPERATIONAL"
 };
 ```
 
-- 🔭 Currently working on **enterprise web applications**
-- 🌱 Learning **cloud architecture** and **microservices**
-- 💬 Ask me about **React, Django, Laravel, Spring Boot**
-- ⚡ Fun fact: I believe clean code is a form of art
+<br clear="right"/>
 
 ---
 
-## 🛠️ Tech Stack
+## 🌌 `SHIP_SYSTEMS.config`
 
-<details open>
-<summary><b>Frontend</b></summary>
-<br/>
-<p>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"/>
-</p>
-</details>
+<table>
+<tr>
+<td valign="top" width="50%">
 
-<details open>
-<summary><b>Backend</b></summary>
-<br/>
-<p>
-  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white"/>
-  <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white"/>
-</p>
-</details>
+### ⚡ Core Systems
+```yaml
+frontend_array:
+  - React ━━━━━━━━━━ ██████████ 
+  - TypeScript ━━━━━ █████████░
+  - JavaScript ━━━━━ ██████████
+  - Tailwind CSS ━━━ █████████░
+  - Vite ━━━━━━━━━━━ ████████░░
+  - HTML/CSS ━━━━━━━ ██████████
+```
 
-<details open>
-<summary><b>Database & Tools</b></summary>
+</td>
+<td valign="top" width="50%">
+
+### 🔧 Engine Room
+```yaml
+backend_core:
+  - Django ━━━━━━━━━ ██████████
+  - Laravel ━━━━━━━━ █████████░
+  - Spring Boot ━━━━ ████████░░
+  - .NET/Blazor ━━━━ ████████░░
+  - Python ━━━━━━━━━ ██████████
+  - Java ━━━━━━━━━━━ ████████░░
+```
+
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+### 🗄️ Data Vaults
+```yaml
+databases:
+  - PostgreSQL ━━━━━ █████████░
+  - MySQL ━━━━━━━━━━ █████████░
+  - Supabase ━━━━━━━ ████████░░
+  - Firebase ━━━━━━━ ███████░░░
+```
+
+</td>
+<td valign="top" width="50%">
+
+### 🛠️ Utility Bay
+```yaml
+tools_and_ops:
+  - Git ━━━━━━━━━━━━ ██████████
+  - Docker ━━━━━━━━━ ████████░░
+  - n8n/Make ━━━━━━━ █████████░
+  - VS Code ━━━━━━━━ ██████████
+```
+
+</td>
+</tr>
+</table>
+
+<div align="center">
 <br/>
-<p>
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"/>
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
-</p>
-</details>
+
+![React](https://img.shields.io/badge/React-0d0221?style=flat-square&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-0d0221?style=flat-square&logo=typescript&logoColor=3178C6)
+![Python](https://img.shields.io/badge/Python-0d0221?style=flat-square&logo=python&logoColor=3776AB)
+![Django](https://img.shields.io/badge/Django-0d0221?style=flat-square&logo=django&logoColor=092E20)
+![Laravel](https://img.shields.io/badge/Laravel-0d0221?style=flat-square&logo=laravel&logoColor=FF2D20)
+![Spring](https://img.shields.io/badge/Spring-0d0221?style=flat-square&logo=spring&logoColor=6DB33F)
+![.NET](https://img.shields.io/badge/.NET-0d0221?style=flat-square&logo=dotnet&logoColor=512BD4)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d0221?style=flat-square&logo=postgresql&logoColor=4169E1)
+![Docker](https://img.shields.io/badge/Docker-0d0221?style=flat-square&logo=docker&logoColor=2496ED)
+![Git](https://img.shields.io/badge/Git-0d0221?style=flat-square&logo=git&logoColor=F05032)
+
+</div>
 
 ---
 
-## 📊 GitHub Stats
+## 📡 `TELEMETRY_DATA.json`
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=JivSTuban&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9" height="180"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JivSTuban&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" height="180"/>
-</div>
 
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=JivSTuban&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF" alt="GitHub Streak"/>
-</div>
+<img src="https://github-readme-stats.vercel.app/api?username=JivSTuban&show_icons=true&hide_border=true&bg_color=0d0221&title_color=a855f7&icon_color=6366f1&text_color=e0e7ff&ring_color=a855f7" height="165"/>
+&nbsp;&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JivSTuban&layout=compact&hide_border=true&bg_color=0d0221&title_color=a855f7&text_color=e0e7ff&langs_count=8" height="165"/>
+
+<br/><br/>
+
+<!-- Streak Stats with space theme -->
+<img src="https://streak-stats.demolab.com?user=JivSTuban&theme=midnight-purple&hide_border=true&background=0D0221&ring=A855F7&fire=EC4899&currStreakLabel=A855F7&sideLabels=6366F1&dates=6366F1" alt="GitHub Streak"/>
+
+<br/><br/>
 
 <!-- Activity Graph -->
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=JivSTuban&custom_title=Contribution%20Graph&bg_color=0D1117&color=58A6FF&line=58A6FF&point=FFFFFF&area_color=58A6FF&area=true&hide_border=true" alt="Activity Graph"/>
-</div>
-
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=JivSTuban&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=15" alt="Trophies"/>
-</div>
-
----
-
-## 📌 Featured Projects
-
-<div align="center">
-  <a href="https://github.com/JivSTuban/KailasCakesAndPastries">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=JivSTuban&repo=KailasCakesAndPastries&theme=tokyonight&hide_border=true&bg_color=0D1117" />
-  </a>
-  <a href="https://github.com/JivSTuban/austin">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=JivSTuban&repo=austin&theme=tokyonight&hide_border=true&bg_color=0D1117" />
-  </a>
-</div>
-
----
-
-## 💼 Portfolio & Resume
-
-<div align="center">
-  <a href="https://farfolio.vercel.app">
-    <img src="https://img.shields.io/badge/🌐_Visit_My_Portfolio-000000?style=for-the-badge" alt="Portfolio"/>
-  </a>
-  <a href="https://media.onlinejobs.ph/jobseekers_resumes/beb8d04d1071e5427945083bc287eb0b.pdf">
-    <img src="https://img.shields.io/badge/📄_Download_Resume-4285F4?style=for-the-badge" alt="Resume"/>
-  </a>
-</div>
-
----
-
-<div align="center">
-  
-### 💭 Random Dev Quote
-  
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=JivSTuban&custom_title=◈%20CONTRIBUTION%20FREQUENCY%20◈&bg_color=0d0221&color=a855f7&line=6366f1&point=ec4899&area_color=1e1b4b&area=true&hide_border=true&title_color=a855f7" alt="Activity Graph"/>
 
 </div>
 
 ---
 
+## 🏆 `ACHIEVEMENTS.unlock`
+
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer"/>
+
+<img src="https://github-profile-trophy.vercel.app/?username=JivSTuban&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=10" alt="Trophies"/>
+
 </div>
+
+---
+
+## 🚀 `ACTIVE_MISSIONS.list`
+
+<div align="center">
+
+<a href="https://github.com/JivSTuban/KailasCakesAndPastries">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=JivSTuban&repo=KailasCakesAndPastries&hide_border=true&bg_color=0d0221&title_color=a855f7&icon_color=6366f1&text_color=e0e7ff" />
+</a>
+&nbsp;
+<a href="https://github.com/JivSTuban/austin">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=JivSTuban&repo=austin&hide_border=true&bg_color=0d0221&title_color=a855f7&icon_color=6366f1&text_color=e0e7ff" />
+</a>
+
+</div>
+
+---
+
+## 📜 `SHIPS_LOG.entry`
+
+<div align="center">
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│   "In the vast expanse of code, every bug fixed is a star charted,         │
+│    every feature shipped is a planet discovered."                           │
+│                                                                             │
+│                                        — Captain's Log, Stardate 2026.01   │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+</div>
+
+---
+
+## 🔗 `DOCK_HERE.connect`
+
+<div align="center">
+
+<a href="https://farfolio.vercel.app">
+  <img src="https://img.shields.io/badge/◈_PORTFOLIO_STATION-a855f7?style=for-the-badge&labelColor=0d0221" alt="Portfolio"/>
+</a>
+&nbsp;&nbsp;
+<a href="https://media.onlinejobs.ph/jobseekers_resumes/beb8d04d1071e5427945083bc287eb0b.pdf">
+  <img src="https://img.shields.io/badge/◈_CREW_MANIFEST_(CV)-6366f1?style=for-the-badge&labelColor=0d0221" alt="Resume"/>
+</a>
+
+<br/><br/>
+
+```
+        *    .  *       .             *
+                         *
+ *   .        *       .       .       *
+   .     *                  ╭───────────────────────╮
+       .     *    *        │  TRANSMISSION ENDS    │
+  *        .          .    │  ◈ SAFE TRAVELS ◈    │
+     *          *          ╰───────────────────────╯
+           .        .   *         *
+    .  *        *           .            *
+```
+
+</div>
+
+<!-- Footer Wave -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a0a2e,50:0a1628,100:0d0221&height=120&section=footer"/>
