@@ -16,13 +16,13 @@
 
 <!-- Social Links -->
 <p>
-  <a href="https://jivstuban.me" target="_blank">
+  <a href="https://farfolio.vercel.app" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio"/>
   </a>
   <a href="https://linkedin.com/in/jiv-tuban" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
-  <a href="mailto:jiv@example.com">
+  <a href="mailto:jivtuban14@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
 </p>
@@ -138,10 +138,10 @@ const jiv = {
 ## 💼 Portfolio & Resume
 
 <div align="center">
-  <a href="https://jivstuban.me">
+  <a href="https://farfolio.vercel.app">
     <img src="https://img.shields.io/badge/🌐_Visit_My_Portfolio-000000?style=for-the-badge" alt="Portfolio"/>
   </a>
-  <a href="https://media.onlinejobs.ph/jobseekers_resumes/e353f348b3ae41331ad4c77b3a29b6d4.pdf">
+  <a href="https://media.onlinejobs.ph/jobseekers_resumes/beb8d04d1071e5427945083bc287eb0b.pdf">
     <img src="https://img.shields.io/badge/📄_Download_Resume-4285F4?style=for-the-badge" alt="Resume"/>
   </a>
 </div>
