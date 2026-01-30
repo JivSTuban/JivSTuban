@@ -3,25 +3,19 @@
 <!-- Space Header -->
 <img src="https://capsule-render.vercel.app/api?type=venom&color=0:0d0221,50:0a1628,100:1a0a2e&height=200&section=header&text=JIV%20TUBAN&fontSize=60&fontColor=a855f7&animation=fadeIn&fontAlignY=35&desc=◈%20TRANSMISSION%20FROM%20SECTOR%207G%20◈&descAlignY=55&descSize=14&descColor=6366f1"/>
 
-```
-╔══════════════════════════════════════════════════════════════════════════════╗
-║  ██████╗████████╗ ██████╗     ██╗     █████╗  ██████╗  ██████╗ ███████╗      ║
-║ ██╔════╝╚══██╔══╝██╔═══██╗   ██╔╝    ██╔══██╗██╔═══██╗██╔════╝ ██╔════╝      ║
-║ ██║        ██║   ██║   ██║  ██╔╝     ███████║██║   ██║██║  ███╗█████╗        ║
-║ ██║        ██║   ██║   ██║ ██╔╝      ██╔══██║██║   ██║██║   ██║██╔══╝        ║
-║ ╚██████╗   ██║   ╚██████╔╝██╔╝       ██║  ██║╚██████╔╝╚██████╔╝███████╗      ║
-║  ╚═════╝   ╚═╝    ╚═════╝ ╚═╝        ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝      ║
-║                                                                              ║
-║          「 CROWDSNARE AI  ·  REV AI  ·  AI AUTOMATION ENGINEER 」            ║
-╚══════════════════════════════════════════════════════════════════════════════╝
-```
+<br/>
+
+<!-- Role Banner -->
+<img src="https://img.shields.io/badge/🚀_CTO_@_CROWDSNARE_AI_·_REV_AI_·_AI_AUTOMATION_ENGINEER-0d0221?style=for-the-badge&labelColor=1a0a2e" alt="Role"/>
+
+<br/><br/>
 
 <!-- Typing Animation -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=500&size=22&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=700&height=80&lines=%E2%96%B8+Architecting+digital+ecosystems+across+the+void;%E2%96%B8+Building+AI+systems+that+transcend+boundaries;%E2%96%B8+Full-stack+voyager+exploring+infinite+code" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=500&size=20&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&repeat=true&random=false&width=600&height=30&lines=%E2%96%B8+Architecting+digital+ecosystems+across+the+void;%E2%96%B8+Building+AI+systems+that+transcend+boundaries;%E2%96%B8+Full-stack+voyager+exploring+infinite+code" alt="Typing SVG" />
 </a>
 
-<br/>
+<br/><br/>
 
 <!-- Badges -->
 <p>
@@ -166,19 +160,20 @@ tools_and_ops:
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=JivSTuban&show_icons=true&hide_border=true&bg_color=0d0221&title_color=a855f7&icon_color=6366f1&text_color=e0e7ff&ring_color=a855f7" height="165"/>
+<!-- GitHub Stats using working theme -->
+<img src="https://github-readme-stats.vercel.app/api?username=JivSTuban&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0D1117" height="165"/>
 &nbsp;&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JivSTuban&layout=compact&hide_border=true&bg_color=0d0221&title_color=a855f7&text_color=e0e7ff&langs_count=8" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JivSTuban&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0D1117&langs_count=8" height="165"/>
 
 <br/><br/>
 
-<!-- Streak Stats with space theme -->
-<img src="https://streak-stats.demolab.com?user=JivSTuban&theme=midnight-purple&hide_border=true&background=0D0221&ring=A855F7&fire=EC4899&currStreakLabel=A855F7&sideLabels=6366F1&dates=6366F1" alt="GitHub Streak"/>
+<!-- Streak Stats -->
+<img src="https://streak-stats.demolab.com?user=JivSTuban&theme=midnight-purple&hide_border=true&background=0D1117" alt="GitHub Streak"/>
 
 <br/><br/>
 
 <!-- Activity Graph -->
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=JivSTuban&custom_title=◈%20CONTRIBUTION%20FREQUENCY%20◈&bg_color=0d0221&color=a855f7&line=6366f1&point=ec4899&area_color=1e1b4b&area=true&hide_border=true&title_color=a855f7" alt="Activity Graph"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=JivSTuban&custom_title=◈%20CONTRIBUTION%20FREQUENCY%20◈&theme=midnight-purple&hide_border=true&bg_color=0D1117" alt="Activity Graph"/>
 
 </div>
 
@@ -188,7 +183,7 @@ tools_and_ops:
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=JivSTuban&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=10" alt="Trophies"/>
+<img src="https://github-profile-trophy.vercel.app/?username=JivSTuban&theme=algolia&no-frame=true&no-bg=true&column=4&margin-w=15&margin-h=15" alt="Trophies"/>
 
 </div>
 
@@ -199,11 +194,11 @@ tools_and_ops:
 <div align="center">
 
 <a href="https://github.com/JivSTuban/KailasCakesAndPastries">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=JivSTuban&repo=KailasCakesAndPastries&hide_border=true&bg_color=0d0221&title_color=a855f7&icon_color=6366f1&text_color=e0e7ff" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=JivSTuban&repo=KailasCakesAndPastries&theme=midnight-purple&hide_border=true&bg_color=0D1117" />
 </a>
 &nbsp;
 <a href="https://github.com/JivSTuban/austin">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=JivSTuban&repo=austin&hide_border=true&bg_color=0d0221&title_color=a855f7&icon_color=6366f1&text_color=e0e7ff" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=JivSTuban&repo=austin&theme=midnight-purple&hide_border=true&bg_color=0D1117" />
 </a>
 
 </div>
@@ -214,16 +209,10 @@ tools_and_ops:
 
 <div align="center">
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                                                                             │
-│   "In the vast expanse of code, every bug fixed is a star charted,         │
-│    every feature shipped is a planet discovered."                           │
-│                                                                             │
-│                                        — Captain's Log, Stardate 2026.01   │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+> *"In the vast expanse of code, every bug fixed is a star charted,*  
+> *every feature shipped is a planet discovered."*  
+>  
+> **— Captain's Log, Stardate 2026.01**
 
 </div>
 
