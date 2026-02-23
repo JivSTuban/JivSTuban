@@ -40,7 +40,7 @@ I build AI-powered automation systems and full-stack products for startups acros
 
 ## `> work --current`
 
-- **Technical Lead @ [Crowdsnare AI](https://github.com/JivSTuban)** — Architecting AI agent products & lead automation ecosystems with n8n + GoHighLevel
+- **Technical Lead @ [Crowdsnare AI](https://crowdsnare.com/)** — Architecting AI agent products & lead automation ecosystems with n8n + GoHighLevel
 - **SWE Intern @ Ayahay** — Building multi-tenant RAG chatbot infrastructure with OpenAI embeddings & vector search
 - **Previously** — Full-stack dev at Freckles Graphics ($12M+ revenue automation), AI automation at CFA Institute
 
