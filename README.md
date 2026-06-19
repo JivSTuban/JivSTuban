@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=220&section=header&text=Jiv%20Tuban&fontSize=42&fontColor=58a6ff&fontAlignY=35&desc=Technical%20Lead%20%7C%20Full%20Stack%20Developer%20%7C%20AI%20Engineer&descSize=16&descAlignY=55&descColor=8b949e&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=220&section=header&text=Jiv%20Tuban&fontSize=42&fontColor=58a6ff&fontAlignY=35&desc=AI%20Engineer%20%7C%20Full%20Stack%20Developer%20%7C%20Automation%20Specialist&descSize=16&descAlignY=55&descColor=8b949e&animation=fadeIn" width="100%"/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=70&lines=Building+AI+automation+that+ships+products;From+Cebu+%F0%9F%87%B5%F0%9F%87%AD+to+the+world+%F0%9F%8C%8F)](https://farfolio.vercel.app)
 
@@ -10,7 +10,7 @@
 
 ```yaml
 name: Jiv Tuban
-role: Technical Lead — CTO in Training @ Crowdsnare AI
+role: AI Engineer @ Traciety
 location: Cebu, Philippines
 education: BS Information Technology @ CIT-U (2022–2026)
 focus: AI Automation • Full-Stack Development • Cloud Architecture
@@ -40,9 +40,10 @@ I build AI-powered automation systems and full-stack products for startups acros
 
 ## `> work --current`
 
-- **Technical Lead @ [Crowdsnare AI](https://crowdsnare.com/)** — Architecting AI agent products & lead automation ecosystems with n8n + GoHighLevel
-- **SWE Intern @ Ayahay** — Building multi-tenant RAG chatbot infrastructure with OpenAI embeddings & vector search
-- **Previously** — Full-stack dev at Freckles Graphics ($12M+ revenue automation), AI automation at CFA Institute
+- **AI Engineer @ [Traciety](https://traciety.com)** — OpenClaw-powered Image & Video Ads generation pipelines; HeyGen + Supabase integration; 464-asset creative library systematized across 6 treatment categories
+- **Previously: Technical Lead @ [Crowdsnare AI](https://crowdsnare.com/)** — 6 AI agent products across 10+ dealerships; n8n + GoHighLevel lead automation (manual hours → seconds)
+- **Previously: Full-stack Dev @ Freckles Graphics** — $12M+ revenue automation; 500+ daily orders processed; 85% manual reduction
+- **Previously: SWE Intern @ Ayahay** — Multi-tenant RAG chatbot infra; NestJS microservices; −40% response latency, +57% retrieval recall
 
 ---
 
