@@ -3,7 +3,6 @@
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/card-dark.svg">
   <img alt="Jiv Tuban, AI Engineer at Traciety. Live GitHub contribution totals, streaks and a 52-week activity grid." src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/card-light.svg" width="100%">
 </picture>
-<br>
 
 I build AI automation and full-stack products for US startups: workflow orchestration, RAG pipelines, and web apps tied to revenue. Based in Cebu, Philippines, working remote.
 

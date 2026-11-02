@@ -75,6 +75,8 @@ export function renderCard({ theme, allTime, lastYear, current, longest, weeks, 
   const gridX = Math.round((W - (weeks.length * pitch - (pitch - cell))) / 2);
   const gridY = gridTop + 52;
   const H = gridY + 7 * pitch + 22;
+  const GAP = 20; // transparent space under the card; GitHub ignores <br> after a <picture>
+
   const today = weeks.at(-1).contributionDays.at(-1).date;
 
   const label = (x, y, s, anchor = 'start') =>
@@ -106,7 +108,7 @@ export function renderCard({ theme, allTime, lastYear, current, longest, weeks, 
     [1, 2, 3].map((i) => `<line x1="${i * (W / 4)}" y1="${rowA}" x2="${i * (W / 4)}" y2="${gridTop}" stroke="${t.ink}" stroke-width="1"/>`).join('') +
     `<line x1="0" y1="${gridTop}" x2="${W}" y2="${gridTop}" stroke="${t.ink}" stroke-width="1"/>`;
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="t d">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H + GAP}" viewBox="0 0 ${W} ${H + GAP}" role="img" aria-labelledby="t d">
 <title id="t">${PROFILE.name}, ${PROFILE.role}</title>
 <desc id="d">${fmt(allTime)} GitHub contributions all time, ${fmt(lastYear)} in the last 12 months, current streak ${current} days, longest streak ${longest} days.</desc>
 <rect width="${W}" height="${H}" fill="${t.paper}"/>
