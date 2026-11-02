@@ -8,8 +8,8 @@ import { THEMES, SANS, MONO } from './card.mjs';
 // kind: v = has -Dark/-Light files, s = single file, g = glyph drawn onto a tile here
 const GROUPS = [
   ['AI', [['claude', 'g'], ['openai', 'g'], ['n8n', 'g'], ['playwright', 'g'], ['Python', 'v'], ['TensorFlow', 'v']]],
-  ['FRONTEND', [['React', 'v'], ['NextJS', 'v'], ['TypeScript', 's'], ['TailwindCSS', 'v'], ['Angular', 'v'], ['VueJS', 'v']]],
-  ['BACKEND', [['NestJS', 'v'], ['Spring', 'v'], ['FastAPI', 's'], ['Django', 's'], ['Flask', 'v'], ['Laravel', 'v'], ['DotNet', 's']]],
+  ['FRONTEND', [['React', 'v'], ['NextJS', 'v'], ['TypeScript', 's'], ['TailwindCSS', 'v'], ['Angular', 'v'], ['VueJS', 'v'], ['Flutter', 'v'], ['Dart', 'v']]],
+  ['BACKEND', [['NestJS', 'v'], ['Spring', 'v'], ['FastAPI', 's'], ['Django', 's'], ['Flask', 'v'], ['Laravel', 'v'], ['DotNet', 's'], ['NodeJS', 'v']]],
   ['CLOUD/DATA', [['AWS', 'v'], ['GCP', 'v'], ['digitalocean', 'g'], ['Supabase', 'v'], ['PostgreSQL', 'v'], ['MySQL', 'v'], ['Docker', 's']]],
   ['TOOLS', [['Git', 's'], ['Github', 'v'], ['VSCode', 'v'], ['Linux', 'v']]],
 ];

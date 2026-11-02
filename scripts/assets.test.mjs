@@ -16,9 +16,9 @@ function assertSafe(svg) {
 }
 
 for (const theme of ['light', 'dark']) {
-  test(`stack ${theme}: 30 tiles, self-contained, motion guarded`, () => {
+  test(`stack ${theme}: 33 tiles, self-contained, motion guarded`, () => {
     const svg = renderStack({ theme, dir });
-    assert.equal((svg.match(/<image /g) ?? []).length, 30);
+    assert.equal((svg.match(/<image /g) ?? []).length, 33);
     assertSafe(svg);
   });
   test(`route ${theme}`, () => assertSafe(renderRoute(theme)));

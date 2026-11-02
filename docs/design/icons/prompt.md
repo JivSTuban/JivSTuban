@@ -20,3 +20,7 @@ sharing); 11) a padlock in front of a coin (escrow); 12) a sealed envelope (cont
 
 Names in order: `automation, medspa, car, ferry, print, trophy, house, cake, internship, map, escrow, envelope`.
 Source of the style: the ISO 7200 drawing title block (see `../DIRECTION.md`).
+
+## Sheet 2 (2026-11-03): CV sync
+
+Generated with the first sheet attached as a style reference (`-i sheet.jpg`), 2x2 grid, same style paragraph. Names: `autoapply` (form with check and paper plane), `privacy` (padlock with map pin), `sdk` (open book with speech bubble), `clapper` (film clapperboard). Cut with `slice.py ... --grid 2x2 --margin 0.12`.
