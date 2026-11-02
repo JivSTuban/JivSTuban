@@ -3,13 +3,12 @@
 //   stack-{light,dark}.svg   animated technology grid
 //   route-{light,dark}.svg   section divider with a sailing ferry
 //   chip-<name>-{light,dark}.svg  contact links
-//   banner.svg               the Cebu photo with a slow drift
 //   GH_TOKEN=... node scripts/build.mjs [outDir]
 // The workflow publishes the output to the `output` branch; the README reads it from there.
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync } from 'node:fs';
 import { renderCard, streaks, THEMES } from './card.mjs';
 import { renderStack } from './stack.mjs';
-import { renderBanner, renderRoute, renderChip } from './motion.mjs';
+import { renderRoute, renderChip } from './motion.mjs';
 
 const LOGIN = 'JivSTuban';
 const out = process.argv[2] ?? 'dist';
@@ -56,7 +55,6 @@ const { current, longest } = streaks(days, today);
 const allTime = Object.values(days).reduce((a, b) => a + b, 0);
 
 mkdirSync(out, { recursive: true });
-writeFileSync(`${out}/banner.svg`, renderBanner(readFileSync(`${root}assets/banner.jpg`)));
 for (const theme of Object.keys(THEMES)) {
   writeFileSync(`${out}/stack-${theme}.svg`, renderStack({ theme, dir: tech }));
   writeFileSync(`${out}/route-${theme}.svg`, renderRoute(theme));

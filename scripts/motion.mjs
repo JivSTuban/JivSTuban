@@ -1,29 +1,10 @@
-// Animated banner, route divider and contact chips. Motion lives in CSS inside the SVG (no JS runs in a
+// Route divider and contact chips. Motion lives in CSS inside the SVG (no JS runs in a
 // GitHub README) and is wrapped in prefers-reduced-motion: no-preference, so the resting state is the
 // reduced-motion state.
 import { readFileSync } from 'node:fs';
 import { THEMES, SANS, MONO } from './card.mjs';
 
 const ease = 'cubic-bezier(.23,1,.32,1)';
-
-/** The Cebu photo with a slow drift and zoom (a few px over half a minute, never a loop jump). */
-export function renderBanner(jpg) {
-  const W = 888;
-  const H = 296;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="t">
-<title id="t">A desk by an open window with a laptop, coffee and notebook, looking over a bay in Cebu with a ferry in the distance (AI-generated image)</title>
-<style>
-.pan{transform-box:fill-box;transform-origin:50% 60%}
-@media (prefers-reduced-motion: no-preference){
-  .pan{animation:drift 32s ease-in-out infinite alternate}
-  @keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(-26px,-5px) scale(1.045)}}
-}
-</style>
-<rect width="${W}" height="${H}" fill="#8c8f8f"/>
-<g class="pan"><image href="data:image/jpeg;base64,${jpg.toString('base64')}" x="-14" y="-5" width="${W + 28}" height="${(W + 28) / 3}" preserveAspectRatio="xMidYMid slice"/></g>
-</svg>
-`;
-}
 
 /** A dimension line with a ferry that sails across it. Used between sections. */
 export function renderRoute(theme) {

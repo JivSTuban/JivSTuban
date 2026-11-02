@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { renderStack } from './stack.mjs';
-import { renderBanner, renderRoute, renderChip } from './motion.mjs';
+import { renderRoute, renderChip } from './motion.mjs';
 import { renderCard } from './card.mjs';
 
 const dir = new URL('../assets/tech', import.meta.url).pathname;
@@ -28,5 +28,3 @@ for (const theme of ['light', 'dark']) {
   test(`card ${theme} animations guarded`, () =>
     assertSafe(renderCard({ theme, allTime: 1, lastYear: 1, current: 1, longest: 1, weeks, rev: '2026-11-02' })));
 }
-
-test('banner embeds the photo and is guarded', () => assertSafe(renderBanner(Buffer.from('jpg'))));

@@ -5,7 +5,7 @@
 An engineering drawing carries a bordered strip of labelled cells (small caps label above, value
 below, hairline rules between). It is the sheet's identity: who drew it, what it is, which revision.
 That is what a profile has to do, and Jiv's work is systems and measured results, so the profile is a
-sheet: one photographed view, the title block, then schedules (tables) like a drawing's. Every image
+sheet: the title block, then schedules (tables) like a drawing's. Every image
 shares the sheet's language: hairline ink, square cells, paper tones, one accent.
 Reference: ISO 7200 / ISO 5457 sheet templates (see `REFERENCES.md`).
 
@@ -21,7 +21,7 @@ the amount of media and motion is not.
 - **Who and where:** Jiv Tuban, AI engineer in Cebu, PH, selling to US startup founders and hiring managers who arrive from a LinkedIn post.
 - **Feel:** exact, alive, grounded. **Not:** techy-neon, playful-cartoon, salesy.
 - **Personality in a line:** an engineer who hands you a clean drawing, the numbers, and a ferry crossing the page.
-- **Signature:** the live title block under a drifting photograph of his desk and the Cebu bay, with a plotter-style scan across the tools he works with.
+- **Signature:** the live title block at the top, with a plotter-style scan across the tools he works with and a ferry on the divider.
 
 ## Levers
 
@@ -29,7 +29,7 @@ the amount of media and motion is not.
 |---|---|---|
 | Colour field | Warm paper `#f4f1ea` / `#131210`, ink `#1d1c1a` / `#ece8dd`, one accent `#c2410c` / `#f0662a` | Drafting paper and ink; accent only on "now" (current streak, today's cell, the scan, the ferry funnel) |
 | Type voice | System mono for labels and numerals, system sans for name and role | GitHub renders SVG with system fonts only |
-| Photography | Generated documentary photo of a desk at an open window over a Cebu bay with a ferry far off (Jiv's own setting: remote work from Cebu), no text, slow drift animation | Codex `$imagegen` (gpt-6-sol). Rev 1 was a grey pier photo; Jiv disliked it (2026-11-03). Rev 2 picked from 3 new candidates: bangka on turquoise water (rejected: tourism postcard), warm Cebu pier (rejected: same subject as the one he disliked), window desk (chosen) |
+| Photography | None. Jiv asked to delete the photo (2026-11-03). Two banners were tried: a grey Cebu pier (disliked) and a window desk over a Cebu bay. Both were generated with Codex `$imagegen` and removed. The illustrations and tech tiles carry the media now | Jiv |
 | Illustration | 12 technical-pen line icons (workflow, lotus, car, ferry, print, trophy, house, cake, cap, map, padlock, envelope), ink plus one accent detail, recoloured per theme | Codex `$imagegen`, one sheet; `icons/prompt.md`, `icons/slice.py` |
 | Technology icons | 30 brand tiles in a gridded schedule, vendored (skill-icons MIT, glyphs CC0/MIT) | Jiv liked the skillicons grid; `assets/tech/SOURCES.md` |
 | Shape language | Square cells and hairlines for the sheet; the brand tiles keep their own rounded corners | Title block; skill-icons |
@@ -40,7 +40,6 @@ the amount of media and motion is not.
 
 | Element | Motion | Why |
 |---|---|---|
-| Banner | 32 s drift and 4.5% zoom, alternating | Water and light, never a loop jump |
 | Card grid | Cells fade in left to right (16 ms stagger); today's cell pulses | Reads as the data arriving; "now" is the one thing that breathes |
 | Stack grid | Tiles rise in (28 ms stagger, 300 ms, ease-out); an accent outline sweeps diagonally every 10 s | A pen plotter checking each tool |
 | Route divider | A ferry sails the dimension line (22 s) and bobs | Cebu, ferries, Ayahay |
@@ -51,10 +50,10 @@ With reduced motion everything is already in its final, visible state.
 ## Decisions
 
 - Restored: technology icon grid (as self-hosted tiles with category rows), after Jiv asked for it.
-- Added: animated banner, route divider, per-job and per-project line illustrations, contact chips, the stack as text in a `<details>` for search and screen readers.
+- Added: route divider, per-job and per-project line illustrations, contact chips, the stack as text in a `<details>` for search and screen readers.
 - Still removed: capsule-render waves, typing SVG, visitor counter, shields badges, `> command` headings, emoji, centred layout, snake animation, gradients and glow. Rule 7 stays in force.
 - Self-hosted everything: `scripts/build.mjs` + `.github/workflows/card.yml` publish all generated SVGs to the `output` branch every 6 hours; illustrations and tech tiles are committed under `assets/`. Nothing depends on a public Vercel instance (the old `github-readme-stats` returned 503 and `activity-graph` 402, which caused the broken images).
-- The banner and illustrations are AI-generated and the banner's alt text says so.
+- The illustrations are AI-generated (Codex `$imagegen`).
 - Rejected: Kent C. Dodds style 3D mascot art (decorative, generic); simonw style multi-column live lists (too dense for a first impression); jstrieb card layout (language bars overlap); a JS or Lottie hero (GitHub strips scripts).
 
 ## Editing
