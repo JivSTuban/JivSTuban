@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/banner.svg" alt="An inter-island ferry moored at a concrete pier on the Cebu waterfront (AI-generated image)" width="100%">
+<img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/banner.svg" alt="A desk by an open window with a laptop, coffee and notebook, looking over a bay in Cebu with a ferry in the distance (AI-generated image)" width="100%">
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/card-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/card-light.svg" alt="Jiv Tuban, AI Engineer at Traciety. Live GitHub contribution totals, streaks and a 52-week activity grid." width="100%"></picture>
 
 <table>

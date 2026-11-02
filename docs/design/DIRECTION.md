@@ -21,7 +21,7 @@ the amount of media and motion is not.
 - **Who and where:** Jiv Tuban, AI engineer in Cebu, PH, selling to US startup founders and hiring managers who arrive from a LinkedIn post.
 - **Feel:** exact, alive, grounded. **Not:** techy-neon, playful-cartoon, salesy.
 - **Personality in a line:** an engineer who hands you a clean drawing, the numbers, and a ferry crossing the page.
-- **Signature:** the live title block under a drifting photograph of the Cebu waterfront, with a plotter-style scan across the tools he works with.
+- **Signature:** the live title block under a drifting photograph of his desk and the Cebu bay, with a plotter-style scan across the tools he works with.
 
 ## Levers
 
@@ -29,7 +29,7 @@ the amount of media and motion is not.
 |---|---|---|
 | Colour field | Warm paper `#f4f1ea` / `#131210`, ink `#1d1c1a` / `#ece8dd`, one accent `#c2410c` / `#f0662a` | Drafting paper and ink; accent only on "now" (current streak, today's cell, the scan, the ferry funnel) |
 | Type voice | System mono for labels and numerals, system sans for name and role | GitHub renders SVG with system fonts only |
-| Photography | Generated documentary photo, Cebu pier and ferry, no text, slow drift animation | Codex `$imagegen` (gpt-6-sol), 2 candidates, picked B |
+| Photography | Generated documentary photo of a desk at an open window over a Cebu bay with a ferry far off (Jiv's own setting: remote work from Cebu), no text, slow drift animation | Codex `$imagegen` (gpt-6-sol). Rev 1 was a grey pier photo; Jiv disliked it (2026-11-03). Rev 2 picked from 3 new candidates: bangka on turquoise water (rejected: tourism postcard), warm Cebu pier (rejected: same subject as the one he disliked), window desk (chosen) |
 | Illustration | 12 technical-pen line icons (workflow, lotus, car, ferry, print, trophy, house, cake, cap, map, padlock, envelope), ink plus one accent detail, recoloured per theme | Codex `$imagegen`, one sheet; `icons/prompt.md`, `icons/slice.py` |
 | Technology icons | 30 brand tiles in a gridded schedule, vendored (skill-icons MIT, glyphs CC0/MIT) | Jiv liked the skillicons grid; `assets/tech/SOURCES.md` |
 | Shape language | Square cells and hairlines for the sheet; the brand tiles keep their own rounded corners | Title block; skill-icons |

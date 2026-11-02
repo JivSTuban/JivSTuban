@@ -11,7 +11,7 @@ export function renderBanner(jpg) {
   const W = 888;
   const H = 296;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="t">
-<title id="t">An inter-island ferry moored at a concrete pier on the Cebu waterfront (AI-generated image)</title>
+<title id="t">A desk by an open window with a laptop, coffee and notebook, looking over a bay in Cebu with a ferry in the distance (AI-generated image)</title>
 <style>
 .pan{transform-box:fill-box;transform-origin:50% 60%}
 @media (prefers-reduced-motion: no-preference){
