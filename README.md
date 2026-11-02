@@ -3,6 +3,7 @@
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/card-dark.svg">
   <img alt="Jiv Tuban, AI Engineer at Traciety. Live GitHub contribution totals, streaks and a 52-week activity grid." src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/card-light.svg" width="100%">
 </picture>
+<br>
 
 I build AI automation and full-stack products for US startups: workflow orchestration, RAG pipelines, and web apps tied to revenue. Based in Cebu, Philippines, working remote.
 
@@ -10,16 +11,21 @@ I build AI automation and full-stack products for US startups: workflow orchestr
 
 ## Work
 
-| When | Role | Result |
-|:--|:--|:--|
-| Apr 2026 to now | AI Engineer (project-based), [Traciety](https://traciety.com) | Image and video ad generation inside the production dashboard (HeyGen, Supabase). 300+ past ads turned into reusable medspa templates. Runs tech ops for 28 client sub-accounts and 18 n8n workflows. |
-| Nov 2025 to Mar 2026 | Software Engineer Intern, Ayahay | Multi-tenant RAG chatbot rebuilt as NestJS microservices: about 40% lower latency, about 57% better retrieval recall. |
-| Apr to Oct 2025 | Technical Lead, [Crowdsnare AI](https://crowdsnare.com/) | 6 AI products across 10+ dealerships. Speed-to-lead agent: 11 vehicle sales, 90% booking conversion. n8n and GoHighLevel automation took manual hours to seconds. |
-| Jul 2024 to Mar 2025 | Full-stack Developer, Freckles Graphics | Print workflow for 500+ daily orders, 85% less manual processing, at a company running $12M+ a year. Image studio with sub-30-second generation. |
+**AI Engineer (project-based), [Traciety](https://traciety.com)**, Apr 2026 to now  
+Image and video ad generation inside the production dashboard (HeyGen, Supabase). 300+ past ads turned into reusable medspa templates. Runs tech ops for 28 client sub-accounts and 18 n8n workflows.
+
+**Software Engineer Intern, Ayahay**, Nov 2025 to Mar 2026  
+Multi-tenant RAG chatbot rebuilt as NestJS microservices: about 40% lower latency, about 57% better retrieval recall.
+
+**Technical Lead, [Crowdsnare AI](https://crowdsnare.com/)**, Apr to Oct 2025  
+6 AI products across 10+ dealerships. Speed-to-lead agent: 11 vehicle sales, 90% booking conversion. n8n and GoHighLevel automation took manual hours to seconds.
+
+**Full-stack Developer, Freckles Graphics**, Jul 2024 to Mar 2025  
+Print workflow for 500+ daily orders, 85% less manual processing, at a company running $12M+ a year. Image studio with sub-30-second generation.
 
 ## Stack
 
-| | |
+| Layer | Tools |
 |:--|:--|
 | AI | Claude Code, MCP, OpenAI API, RAG, n8n, Playwright, Vapi, ElevenLabs |
 | Backend | NestJS, Spring Boot, FastAPI, Flask, Supabase, PostgreSQL |
@@ -28,13 +34,15 @@ I build AI automation and full-stack products for US startups: workflow orchestr
 
 ## Projects
 
-| Project | Stack | What it does |
-|:--|:--|:--|
-| **[Austin McClain](https://austinmcclain.com)** | React, Supabase, Cloudinary | Real estate portfolio. Automated MLS feeds process 119+ listings worth $13.5M. |
-| **[Keilah's Cakes](https://keilahs.shop)** | Next.js, Supabase, Tailwind | Bakery storefront with a 95+ Lighthouse score and an optimized image pipeline. |
-| **OJTech** | React, Spring Boot, Gemini API | Internship matching with NLP-based job recommendations. |
-| **Navigram** | Spring Boot, React, Kotlin, WebSockets | Social memory sharing with geospatial indexing and real-time chat. |
-| **GAssure** | React, Supabase, Solana | Escrow that blocks middle-man scams. 1st place, GCash ImaGnation 2025. |
+**[Austin McClain](https://austinmcclain.com)**: real estate portfolio. Automated MLS feeds process 119+ listings worth $13.5M. `React` `Supabase` `Cloudinary`
+
+**[Keilah's Cakes](https://keilahs.shop)**: bakery storefront with a 95+ Lighthouse score and an optimized image pipeline. `Next.js` `Supabase` `Tailwind`
+
+**OJTech**: internship matching with NLP-based job recommendations. `React` `Spring Boot` `Gemini API`
+
+**Navigram**: social memory sharing with geospatial indexing and real-time chat. `Spring Boot` `React` `Kotlin` `WebSockets`
+
+**GAssure**: escrow that blocks middle-man scams. 1st place, GCash ImaGnation 2025. `React` `Supabase` `Solana`
 
 ## Contact
 
