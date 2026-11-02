@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["scripts/**", ".github/workflows/card.yml"]
+    paths: ["scripts/**", "assets/**", ".github/workflows/card.yml"]
 
 permissions:
   contents: write
@@ -26,7 +26,7 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: 24
-      - run: node --test scripts/card.test.mjs
+      - run: node --test scripts/*.test.mjs
       - name: Build cards
         run: node scripts/build.mjs dist
         env:

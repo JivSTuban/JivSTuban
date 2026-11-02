@@ -19,8 +19,8 @@ export const THEMES = {
   },
 };
 
-const SANS = '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif';
-const MONO = 'ui-monospace, "SF Mono", Menlo, Consolas, monospace';
+export const SANS = '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif';
+export const MONO = 'ui-monospace, "SF Mono", Menlo, Consolas, monospace';
 
 const LEVEL = { NONE: 0, FIRST_QUARTILE: 1, SECOND_QUARTILE: 2, THIRD_QUARTILE: 3, FOURTH_QUARTILE: 4 };
 
@@ -98,7 +98,8 @@ export function renderCard({ theme, allTime, lastYear, current, longest, weeks, 
     w.contributionDays.forEach((d, di) => {
       const isToday = d.date === today;
       const fill = isToday ? t.accent : t.levels[LEVEL[d.contributionLevel] ?? 0];
-      squares += `<rect x="${gridX + wi * pitch}" y="${gridY + di * pitch}" width="${cell}" height="${cell}" fill="${fill}"/>`;
+      const cls = isToday ? 'now' : 'c';
+      squares += `<rect class="${cls}" style="animation-delay:${wi * 16}ms" x="${gridX + wi * pitch}" y="${gridY + di * pitch}" width="${cell}" height="${cell}" fill="${fill}"/>`;
     });
   });
 
@@ -111,6 +112,14 @@ export function renderCard({ theme, allTime, lastYear, current, longest, weeks, 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H + GAP}" viewBox="0 0 ${W} ${H + GAP}" role="img" aria-labelledby="t d">
 <title id="t">${PROFILE.name}, ${PROFILE.role}</title>
 <desc id="d">${fmt(allTime)} GitHub contributions all time, ${fmt(lastYear)} in the last 12 months, current streak ${current} days, longest streak ${longest} days.</desc>
+<style>
+@media (prefers-reduced-motion: no-preference){
+  .c{animation:fade .35s ease-out both}
+  .now{animation:fade .35s ease-out both, pulse 2.4s ease-in-out 1.4s infinite}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+}
+</style>
 <rect width="${W}" height="${H}" fill="${t.paper}"/>
 ${label(18, 34, 'NAME')}
 <text x="18" y="82" font-family='${SANS}' font-size="40" font-weight="700" fill="${t.ink}">${PROFILE.name}</text>
