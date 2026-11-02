@@ -1,0 +1,45 @@
+name: Profile card
+
+# Rebuilds card-light.svg and card-dark.svg (title block + live stats + activity grid) and publishes
+# them to the `output` branch, which the README reads. Replaces the third-party stats widgets, which
+# were hosted on public Vercel instances that went down (503 and 402) and left broken images.
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/**", ".github/workflows/card.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: card
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - run: node --test scripts/card.test.mjs
+      - name: Build cards
+        run: node scripts/build.mjs dist
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Publish to output branch
+        # One orphan commit, force-pushed: the branch holds only the latest cards, so it never grows.
+        run: |
+          cd dist
+          git init -q -b output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "cards $(date -u +%F)"
+          git push -f "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
+        env:
+          GH_TOKEN: ${{ github.token }}
