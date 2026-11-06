@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="48" viewBox="0 0 160 48" role="img" aria-label="Portfolio">
+<style>
+@media (prefers-reduced-motion: no-preference){ .a{animation:in .3s cubic-bezier(.23,1,.32,1) both} @keyframes in{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}} }
+</style>
+<rect width="160" height="48" fill="#f4f1ea"/>
+<g class="a"><image href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiByeD0iNjAiIGZpbGw9IiNGNEYyRUQiLz4KPHBhdGggZD0iTTEyOCAzNEwyMjMgMTk4Ljg1M0gzM0wxMjggMzRaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K" x="10" y="10" width="28" height="28"/>
+<text x="48" y="30" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="16" letter-spacing="0.5" fill="#1d1c1a">Portfolio</text></g>
+<rect x="0.75" y="0.75" width="158.5" height="46.5" fill="none" stroke="#1d1c1a" stroke-width="1.5"/>
+</svg>

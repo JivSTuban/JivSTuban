@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="888" height="52" viewBox="0 0 888 52" role="img" aria-label="">
+<style>
+.sail{transform:translate(120px,0)}
+@media (prefers-reduced-motion: no-preference){
+  .sail{animation:sail 22s linear infinite}
+  .bob{animation:bob 2.6s ease-in-out infinite alternate}
+  @keyframes sail{from{transform:translate(-60px,0)}to{transform:translate(898px,0)}}
+  @keyframes bob{from{transform:translateY(-1.2px)}to{transform:translateY(1.2px)}}
+}
+</style>
+<line x1="8" y1="40" x2="880" y2="40" stroke="#1d1c1a" stroke-width="1"/>
+<line x1="8" y1="33" x2="8" y2="47" stroke="#1d1c1a" stroke-width="1.5"/>
+<line x1="880" y1="33" x2="880" y2="47" stroke="#1d1c1a" stroke-width="1.5"/>
+<g class="sail"><g transform="translate(0 16)"><g class="bob"><path d="M0 14 L46 14 L39 24 L7 24 Z" fill="#f4f1ea" stroke="#1d1c1a" stroke-width="1.5" stroke-linejoin="round"/><rect x="10" y="5" width="22" height="9" fill="#f4f1ea" stroke="#1d1c1a" stroke-width="1.5"/><rect x="20" y="-2" width="6" height="7" fill="#c2410c"/></g></g></g>
+</svg>

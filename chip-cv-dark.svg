@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="48" viewBox="0 0 160 48" role="img" aria-label="CV (PDF)">
+<style>
+@media (prefers-reduced-motion: no-preference){ .a{animation:in .3s cubic-bezier(.23,1,.32,1) both} @keyframes in{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}} }
+</style>
+<rect width="160" height="48" fill="#131210"/>
+<g class="a"><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIHJ4PSI2MCIgZmlsbD0iIzI0MjkzOCIvPjxwYXRoIGQ9Ik04MCA0OGg2Nmw0MiA0MnYxMThhOCA4IDAgMCAxLTggOEg4MGE4IDggMCAwIDEtOC04VjU2YTggOCAwIDAgMSA4LTh6IiBmaWxsPSJub25lIiBzdHJva2U9IiNlY2U4ZGQiIHN0cm9rZS13aWR0aD0iMTIiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMTQ2IDQ4djQyaDQyIiBmaWxsPSJub25lIiBzdHJva2U9IiNlY2U4ZGQiIHN0cm9rZS13aWR0aD0iMTIiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNOTYgMTMwaDY0TTk2IDE1OGg2NE05NiAxODZoNDAiIHN0cm9rZT0iI2MyNDEwYyIgc3Ryb2tlLXdpZHRoPSIxMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+" x="10" y="10" width="28" height="28"/>
+<text x="48" y="30" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="16" letter-spacing="0.5" fill="#ece8dd">CV (PDF)</text></g>
+<rect x="0.75" y="0.75" width="158.5" height="46.5" fill="none" stroke="#ece8dd" stroke-width="1.5"/>
+</svg>
