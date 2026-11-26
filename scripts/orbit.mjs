@@ -1,4 +1,4 @@
-// Projects as a solar system: the avatar is the sun and each project is a planet on a tilted orbit.
+// Projects as a solar system: each project is a planet on a tilted orbit around the sun.
 // After RepoVerse (github.com/nimaldanyathk/repo-verse, MIT), rebuilt so it works inside a README image:
 // no external images, orbits fit the frame, planets start spread out, lit sides face the sun.
 // Motion is CSS only. Each orbit is a circle squashed to an ellipse; the planet counter-rotates and
@@ -29,8 +29,7 @@ function mix(hex, to, amount) {
   return `#${a.map((v, i) => Math.round(v + (b[i] - v) * amount).toString(16).padStart(2, '0')).join('')}`;
 }
 
-/** avatar: base64 JPEG for the sun. */
-export function renderOrbit({ theme, avatar, projects = PROJECTS }) {
+export function renderOrbit({ theme, projects = PROJECTS }) {
   const t = THEMES[theme];
   const dark = theme === 'dark';
   const cx = W / 2;
@@ -80,7 +79,7 @@ export function renderOrbit({ theme, avatar, projects = PROJECTS }) {
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H + GAP}" viewBox="0 0 ${W} ${H + GAP}" role="img" aria-label="Projects: ${esc(projects.map((p) => p.name).join(', '))}">
 <defs>
-<clipPath id="sun"><circle cx="${cx}" cy="${cy}" r="${sun}"/></clipPath>
+<radialGradient id="sun" cx="50%" cy="50%" r="50%" fx="38%" fy="36%"><stop offset="0" stop-color="${mix(t.accent, '#ffffff', 0.75)}"/><stop offset=".45" stop-color="${mix(t.accent, '#ffd27a', 0.35)}"/><stop offset="1" stop-color="${t.accent}"/></radialGradient>
 <radialGradient id="glow"><stop offset=".55" stop-color="${t.accent}" stop-opacity=".35"/><stop offset="1" stop-color="${t.accent}" stop-opacity="0"/></radialGradient>
 ${defs}
 </defs>
@@ -100,8 +99,7 @@ ${stars}
 ${orbits}
 <g transform="translate(${cx} ${cy})">${planets}</g>
 <g transform="translate(${cx} ${cy})"><g class="glow"><circle r="${sun + 22}" fill="url(#glow)"/></g></g>
-<image href="data:image/jpeg;base64,${avatar}" x="${cx - sun}" y="${cy - sun}" width="${sun * 2}" height="${sun * 2}" clip-path="url(#sun)"/>
-<circle cx="${cx}" cy="${cy}" r="${sun}" fill="none" stroke="${t.accent}" stroke-width="2"/>
+<circle cx="${cx}" cy="${cy}" r="${sun}" fill="url(#sun)"/>
 ${readout}
 <rect x="0.75" y="0.75" width="${W - 1.5}" height="${H - 1.5}" fill="none" stroke="${t.ink}" stroke-width="1.5"/>
 </svg>

@@ -1,8 +1,8 @@
 // The terminal pieces at the top of the README: a prompt that types true lines, and a neofetch-style readout.
 // Motion is CSS inside the SVG, wrapped in prefers-reduced-motion: no-preference; the resting state shows
 // the first line fully typed and every readout row in place.
-// The portraits in assets/portrait are the GitHub avatar, cut out with macOS Vision person segmentation,
-// scaled to 52x26 with ffmpeg and mapped to ' .:-=+*#%@' (light: dark pixels dense; dark: bright pixels dense).
+// assets/logo/ascii.txt is "jiv" in Arial Black with a diagonal shade, scaled to 52x26 with ffmpeg and mapped
+// to ' .:-=+*#%@', dense where the letter is dark. It reads as ink on paper and as light on the dark theme.
 import { THEMES, MONO } from './card.mjs';
 
 const W = 888;
@@ -90,16 +90,17 @@ ${lines.map((l, p) => text(tx, l, t.ink, `p${p}`)).join('\n')}
 }
 
 /**
- * neofetch: the ASCII portrait on the left, key/value rows on the right, a palette strip under them.
- * rows: [key, value, accent?]. Rows and portrait lines boot in top to bottom.
+ * neofetch: the ASCII logo on the left, key/value rows on the right, a palette strip under them.
+ * rows: [key, value, accent?]. The logo's first `accentLines` lines (the dots) take the accent.
+ * Rows and logo lines boot in top to bottom.
  */
-export function renderFetch({ theme, art, rows }) {
+export function renderFetch({ theme, art, rows, accentLines = 0 }) {
   const t = THEMES[theme];
   const lines = art.replace(/\n+$/, '').split('\n');
-  const artSize = 11;
-  const artPitch = 6.6;
-  const artLead = 12.4;
-  const ax = 28;
+  const artSize = 14;
+  const artPitch = 8.4;
+  const artLead = 15.5;
+  const ax = 24;
   const ix = 418;
   const size = 16;
   const cw = 9.6;
@@ -115,7 +116,7 @@ export function renderFetch({ theme, art, rows }) {
       const lead0 = l.length - l.trimStart().length;
       const s = l.trimStart();
       if (!s) return '';
-      return `<text class="b" style="animation-delay:${i * 28}ms" x="${(ax + lead0 * artPitch).toFixed(1)}" y="${(ay + i * artLead).toFixed(1)}" font-family='${MONO}' font-size="${artSize}" textLength="${(s.length * artPitch).toFixed(1)}" fill="${t.ink}" xml:space="preserve">${esc(s)}</text>`;
+      return `<text class="b" style="animation-delay:${i * 28}ms" x="${(ax + lead0 * artPitch).toFixed(1)}" y="${(ay + i * artLead).toFixed(1)}" font-family='${MONO}' font-size="${artSize}" textLength="${(s.length * artPitch).toFixed(1)}" fill="${i < accentLines ? t.accent : t.ink}" xml:space="preserve">${esc(s)}</text>`;
     })
     .join('');
 
