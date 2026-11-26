@@ -2,6 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { renderStack } from './stack.mjs';
+import { renderCerts, CERTS } from './certs.mjs';
 import { renderChip } from './motion.mjs';
 import { renderCard } from './card.mjs';
 import { renderTyping, renderFetch } from './terminal.mjs';
@@ -34,6 +35,11 @@ for (const theme of ['light', 'dark']) {
     assertSafe(renderFetch({ theme, art: readFileSync(new URL(`../assets/portrait/ascii-${theme}.txt`, import.meta.url), 'utf8'), colors: JSON.parse(readFileSync(new URL(`../assets/portrait/colors-${theme}.json`, import.meta.url), 'utf8')), rows: [['OS', 'Cebu']] })));
   test(`fetch ${theme}`, () =>
     assertSafe(renderFetch({ theme, art: logo, rows: [['OS', 'Cebu'], ['Streak', '3 days', true]], accentLines: 3 })));
+  test(`certs ${theme}: one badge per certification`, () => {
+    const svg = renderCerts({ theme, dir });
+    assert.equal((svg.match(/<image /g) ?? []).length, CERTS.length);
+    assertSafe(svg);
+  });
   for (const entry of WORK) {
     test(`entry card ${entry.slug} ${theme}: no images, every figure shown`, () => {
       const svg = renderEntryCard({ theme, entry });

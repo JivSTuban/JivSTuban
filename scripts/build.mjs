@@ -1,6 +1,7 @@
 // Builds every generated image the README uses into [outDir]:
 //   card-{light,dark}.svg    title block + live stats + activity grid (GitHub GraphQL, needs GH_TOKEN)
 //   stack-{light,dark}.svg   animated technology grid
+//   certs-{light,dark}.svg   certification badges
 //   chip-<name>-{light,dark}.svg  contact links
 //   typing-{light,dark}.svg  terminal prompt typing true lines
 //   fetch-{light,dark}.svg   neofetch readout with the ASCII portrait and live stats
@@ -14,6 +15,7 @@ import { renderTyping, renderFetch, uptime } from './terminal.mjs';
 import { renderEntryCard, WORK, PROJECTS_CARDS } from './cards.mjs';
 import { renderExplorer } from './explorer.mjs';
 import { renderStack } from './stack.mjs';
+import { renderCerts } from './certs.mjs';
 import { renderChip } from './motion.mjs';
 
 const LOGIN = 'JivSTuban';
@@ -88,6 +90,7 @@ for (const theme of Object.keys(THEMES)) {
   for (const entry of WORK) writeFileSync(`${out}/work-${entry.slug}-${theme}.svg`, renderEntryCard({ theme, entry }));
   writeFileSync(`${out}/projects-${theme}.svg`, renderExplorer({ projects: PROJECTS_CARDS, clock }));
   writeFileSync(`${out}/stack-${theme}.svg`, renderStack({ theme, dir: tech }));
+  writeFileSync(`${out}/certs-${theme}.svg`, renderCerts({ theme, dir: tech }));
   for (const [file, label, icon] of [['linkedin', 'LinkedIn', 'LinkedIn'], ['email', 'Email', 'Email'], ['portfolio', 'Portfolio', 'Portfolio'], ['cv', 'CV (PDF)', 'CV']]) {
     writeFileSync(`${out}/chip-${file}-${theme}.svg`, renderChip({ theme, label, icon, dir: tech }));
   }

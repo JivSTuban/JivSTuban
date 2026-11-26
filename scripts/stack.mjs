@@ -37,7 +37,7 @@ function glyphTile(dir, name, theme) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><rect width="256" height="256" fill="${TILE[theme]}" rx="60"/><g transform="translate(${offset} ${offset}) scale(${g.scale})">${body}</g></svg>`;
 }
 
-function tileSvg(dir, [name, kind], theme) {
+export function tileSvg(dir, [name, kind], theme) {
   if (kind === 'g') return glyphTile(dir, name, theme);
   if (kind === 's') return read(dir, `${name}.svg`);
   return read(dir, `${name}-${theme === 'dark' ? 'Dark' : 'Light'}.svg`);

@@ -16,7 +16,7 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/stack-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/stack-light.svg" alt="Technology stack: Claude, OpenAI, n8n, Playwright, Python, TensorFlow, React, Next.js, TypeScript, Tailwind, Angular, Vue, Flutter, Dart, NestJS, Spring, FastAPI, Django, Flask, Laravel, .NET, Node.js, AWS, GCP, DigitalOcean, Supabase, PostgreSQL, MySQL, Docker, Git, GitHub, VS Code, Linux" width="100%"></picture>
 
-**Certifications:** Anthropic Academy (18 certificates, Jun 2026), AWS Academy Cloud Architecting and Cloud Foundations, Udemy Python and Django, .NET 8 Web API, PHP, Angular.
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/certs-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/certs-light.svg" alt="Certifications: Anthropic Academy, 18 certificates, Jun 2026. AWS Academy Cloud Architecting and Cloud Foundations. Udemy Python and Django Full Stack, Web API in .NET 8, PHP Full Stack, Angular Complete Guide." width="100%"></picture>
 
 ## Projects
 
