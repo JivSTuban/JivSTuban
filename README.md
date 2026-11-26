@@ -8,6 +8,11 @@
 
 ## Work
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/work-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/work-light.svg" alt="Work timeline: AI Engineer at Traciety since Apr 2026, 98% lower automation spend and booking attribution from 54% to 97%. Software Engineer Intern at Ayahay, 40% lower chatbot latency, 57% better retrieval recall. Technical Lead at Crowdsnare AI, 90% booking conversion. AI Automation Developer at Cinematography for Actors Institute, 70% faster email replies. Full-stack Developer at Freckles Graphics, 500+ orders a day." width="100%"></picture>
+
+<details>
+<summary>The work as text</summary>
+
 <table>
 <tr><td width="72" align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/medspa-dark.png"><img src="assets/icons/medspa-light.png" width="56" alt="Lotus on stones"></picture></td><td><b>AI Engineer (full-time), <a href="https://traciety.com">Traciety</a></b>, Apr 2026 to now<br>Cut automation spend 98% (about $7,000 a year) by moving workflows from Make.com to self-hosted n8n, automated stat sheets for 45 clinics, built the client portal, and raised booking attribution from 54% to 97%.</td></tr>
 <tr><td width="72" align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/ferry-dark.png"><img src="assets/icons/ferry-light.png" width="56" alt="Ferry"></picture></td><td><b>Software Engineer Intern, Ayahay</b>, Nov 2025 to Mar 2026<br>Multi-tenant RAG chatbot rebuilt as NestJS microservices: about 40% lower latency, about 57% better retrieval recall.</td></tr>
@@ -15,6 +20,8 @@
 <tr><td width="72" align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/clapper-dark.png"><img src="assets/icons/clapper-light.png" width="56" alt="Clapperboard"></picture></td><td><b>AI Automation Developer, Cinematography for Actors Institute</b>, Jul 2025 to Jan 2026<br>Email automation on Google Cloud Run: 70% faster responses, grounded in 50+ SOPs. Ghost CMS mobile Lighthouse from 45 to 85+.</td></tr>
 <tr><td width="72" align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/print-dark.png"><img src="assets/icons/print-light.png" width="56" alt="T-shirt on a printer bed"></picture></td><td><b>Full-stack Developer, Freckles Graphics</b>, Jul 2024 to Mar 2025<br>Print workflow for 500+ daily orders, 85% less manual processing, at a company running $12M+ a year. Image studio with sub-30-second generation.</td></tr>
 </table>
+
+</details>
 
 ## Stack
 
@@ -38,6 +45,11 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/orbit-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/orbit-light.svg" alt="Projects as a solar system: AutoApply, weewoo, Knowledge Base SDK, Austin McClain, Keilah's Cakes, OJTech, Navigram, GAssure." width="100%"></picture>
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/projects-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/projects-light.svg" alt="Project cards: AutoApply, used by 11 people. weewoo, no plaintext on the server. Knowledge Base SDK, open source, powers Ayahay's chatbot. Austin McClain, $13.5M across 119+ MLS listings. Keilah's Cakes, 95+ Lighthouse. OJTech, NLP job recommendations. Navigram, geo-indexed memories with real-time chat. GAssure, 1st of 196 teams at GCash ImaGnation." width="100%"></picture>
+
+<details>
+<summary>The projects as text</summary>
+
 <table>
 <tr><td width="72" align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/autoapply-dark.png"><img src="assets/icons/autoapply-light.png" width="56" alt="Form with a paper plane"></picture></td><td><b>AutoApply</b>: multi-tenant job application engine used by 11 people. Parses resumes, scores fit with chained AI models, submits through Playwright and ATS integrations. 377 passing tests.<br><sub>Node.js, Playwright, Supabase, React, TypeScript, OpenAI</sub></td></tr>
 <tr><td width="72" align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/privacy-dark.png"><img src="assets/icons/privacy-light.png" width="56" alt="Padlock with a map pin"></picture></td><td><b>weewoo</b>: end-to-end encrypted location sharing and chat. The server stores only ciphertext; 36 row-level-security policies; 223 passing tests.<br><sub>Flutter, Dart, Supabase, libsodium, Argon2id</sub></td></tr>
@@ -48,6 +60,8 @@
 <tr><td width="72" align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/map-dark.png"><img src="assets/icons/map-light.png" width="56" alt="Map pin over a map"></picture></td><td><b>Navigram</b>: social memory sharing with geospatial indexing and real-time chat.<br><sub>Spring Boot, React, Kotlin, WebSockets</sub></td></tr>
 <tr><td width="72" align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/escrow-dark.png"><img src="assets/icons/escrow-light.png" width="56" alt="Padlock and coin"></picture></td><td><b>GAssure</b>: escrow that blocks middle-man scams. 1st place, GCash ImaGnation 2025.<br><sub>React, Supabase, Solana</sub></td></tr>
 </table>
+
+</details>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/route-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/route-light.svg" alt="" width="100%"></picture>
 
