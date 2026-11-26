@@ -3,10 +3,15 @@
 //   stack-{light,dark}.svg   animated technology grid
 //   route-{light,dark}.svg   section divider with a sailing ferry
 //   chip-<name>-{light,dark}.svg  contact links
+//   typing-{light,dark}.svg  terminal prompt typing true lines
+//   fetch-{light,dark}.svg   neofetch readout with the ASCII portrait and live stats
+//   orbit-{light,dark}.svg   projects as a solar system around the avatar
 //   GH_TOKEN=... node scripts/build.mjs [outDir]
 // The workflow publishes the output to the `output` branch; the README reads it from there.
-import { mkdirSync, writeFileSync } from 'node:fs';
-import { renderCard, streaks, THEMES } from './card.mjs';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { renderCard, streaks, fmt, THEMES } from './card.mjs';
+import { renderTyping, renderFetch, uptime } from './terminal.mjs';
+import { renderOrbit } from './orbit.mjs';
 import { renderStack } from './stack.mjs';
 import { renderRoute, renderChip } from './motion.mjs';
 
@@ -30,7 +35,7 @@ async function gql(query) {
 
 const DAYS = 'contributionCalendar { totalContributions weeks { contributionDays { date contributionCount contributionLevel } } }';
 
-const { user } = await gql(`{ user(login: "${LOGIN}") { createdAt contributionsCollection { ${DAYS} } } }`);
+const { user } = await gql(`{ user(login: "${LOGIN}") { createdAt repositories(ownerAffiliations: OWNER, privacy: PUBLIC) { totalCount } contributionsCollection { ${DAYS} } } }`);
 const recent = user.contributionsCollection.contributionCalendar;
 
 // contributionsCollection spans at most one year, so walk back to account creation in 1-year windows.
@@ -54,14 +59,38 @@ const today = recent.weeks.at(-1).contributionDays.at(-1).date;
 const { current, longest } = streaks(days, today);
 const allTime = Object.values(days).reduce((a, b) => a + b, 0);
 
+const lastYear = recent.totalContributions;
+const lines = [
+  'I build AI automation for US startups',
+  'cut automation spend 98% at Traciety',
+  '1st of 196 teams at GCash ImaGnation 2025',
+  `${fmt(lastYear)} contributions in the last 12 months`,
+  'shipping from Cebu, Philippines, remote',
+];
+const rows = [
+  ['OS', 'Cebu, Philippines (UTC+8)'],
+  ['Host', 'Traciety, AI Engineer'],
+  ['Kernel', 'BS IT, CIT-U, class of 2026'],
+  ['Uptime', uptime(user.createdAt, today)],
+  ['Packages', `${user.repositories.totalCount} public repos`],
+  ['Shell', 'Claude Code, Codex CLI, n8n'],
+  ['Award', '1st of 196, GCash ImaGnation 2025'],
+  ['Contribs', `${fmt(allTime)} all time, ${fmt(lastYear)} in 12 months`],
+  ['Streak', `${current} days, longest ${longest}`, true],
+];
+const avatar = readFileSync(`${root}assets/portrait/avatar.jpg`).toString('base64');
+
 mkdirSync(out, { recursive: true });
 for (const theme of Object.keys(THEMES)) {
+  writeFileSync(`${out}/typing-${theme}.svg`, renderTyping({ theme, lines }));
+  writeFileSync(`${out}/fetch-${theme}.svg`, renderFetch({ theme, art: readFileSync(`${root}assets/portrait/ascii-${theme}.txt`, 'utf8'), rows }));
+  writeFileSync(`${out}/orbit-${theme}.svg`, renderOrbit({ theme, avatar }));
   writeFileSync(`${out}/stack-${theme}.svg`, renderStack({ theme, dir: tech }));
   writeFileSync(`${out}/route-${theme}.svg`, renderRoute(theme));
   for (const [file, label, icon] of [['linkedin', 'LinkedIn', 'LinkedIn'], ['email', 'Email', 'Email'], ['portfolio', 'Portfolio', 'Portfolio'], ['cv', 'CV (PDF)', 'CV']]) {
     writeFileSync(`${out}/chip-${file}-${theme}.svg`, renderChip({ theme, label, icon, dir: tech }));
   }
-  const svg = renderCard({ theme, allTime, lastYear: recent.totalContributions, current, longest, weeks: recent.weeks, rev: today });
+  const svg = renderCard({ theme, allTime, lastYear, current, longest, weeks: recent.weeks, rev: today });
   writeFileSync(`${out}/card-${theme}.svg`, svg);
 }
-console.log(JSON.stringify({ allTime, lastYear: recent.totalContributions, current, longest, today }));
+console.log(JSON.stringify({ allTime, lastYear, current, longest, today }));

@@ -1,7 +1,7 @@
 name: Profile card
 
-# Rebuilds card-light.svg and card-dark.svg (title block + live stats + activity grid) and publishes
-# them to the `output` branch, which the README reads. Replaces the third-party stats widgets, which
+# Rebuilds the README images (scripts/build.mjs, plus the 3D contribution city) and publishes them to
+# the `output` branch, which the README reads. Replaces the third-party stats widgets, which
 # were hosted on public Vercel instances that went down (503 and 402) and left broken images.
 on:
   schedule:
@@ -31,6 +31,14 @@ jobs:
         run: node scripts/build.mjs dist
         env:
           GH_TOKEN: ${{ github.token }}
+      - name: Build 3D contribution city
+        # v0.9.3; writes profile-3d-contrib/city-{light,dark}.svg from assets/city-3d.json (seasons in the card palette)
+        uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: assets/city-3d.json
+      - run: cp profile-3d-contrib/city-light.svg profile-3d-contrib/city-dark.svg dist/
       - name: Publish to output branch
         # One orphan commit, force-pushed: the branch holds only the latest cards, so it never grows.
         run: |

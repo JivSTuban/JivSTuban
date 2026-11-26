@@ -1,10 +1,15 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { renderStack } from './stack.mjs';
 import { renderRoute, renderChip } from './motion.mjs';
 import { renderCard } from './card.mjs';
+import { renderTyping, renderFetch } from './terminal.mjs';
+import { renderOrbit, PROJECTS } from './orbit.mjs';
 
 const dir = new URL('../assets/tech', import.meta.url).pathname;
+const portrait = new URL('../assets/portrait/', import.meta.url).pathname;
+const avatar = readFileSync(`${portrait}avatar.jpg`).toString('base64');
 const weeks = [{ contributionDays: [{ date: '2026-11-02', contributionCount: 3, contributionLevel: 'SECOND_QUARTILE' }] }];
 
 // What a GitHub README can safely show: no script, no third-party fetch, motion only when allowed.
@@ -25,6 +30,15 @@ for (const theme of ['light', 'dark']) {
   for (const icon of ['LinkedIn', 'Email', 'Portfolio', 'CV']) {
     test(`chip ${icon} ${theme}`, () => assertSafe(renderChip({ theme, label: icon, icon, dir })));
   }
+  test(`typing ${theme}`, () => assertSafe(renderTyping({ theme, lines: ['one line', 'two, lines'] })));
+  test(`fetch ${theme}`, () =>
+    assertSafe(renderFetch({ theme, art: readFileSync(`${portrait}ascii-${theme}.txt`, 'utf8'), rows: [['OS', 'Cebu'], ['Streak', '3 days', true]] })));
+  test(`orbit ${theme}: one planet per project, avatar embedded`, () => {
+    const svg = renderOrbit({ theme, avatar });
+    assert.equal((svg.match(/fill="url\(#g\d+\)"/g) ?? []).length, PROJECTS.length);
+    assert.match(svg, /href="data:image\/jpeg;base64,/);
+    assertSafe(svg);
+  });
   test(`card ${theme} animations guarded`, () =>
     assertSafe(renderCard({ theme, allTime: 1, lastYear: 1, current: 1, longest: 1, weeks, rev: '2026-11-02' })));
 }

@@ -1,0 +1,30 @@
+[
+  {
+    "type": "season",
+    "fileName": "city-light.svg",
+    "backgroundColor": "#f4f1ea",
+    "foregroundColor": "#1d1c1a",
+    "strongColor": "#c2410c",
+    "weakColor": "#6b675e",
+    "radarColor": "#c2410c",
+    "growingAnimation": true,
+    "contribColors1": ["#e4e0d5", "#f6d5e5", "#eaa7c8", "#d978ab", "#b54c86"],
+    "contribColors2": ["#e4e0d5", "#cfe3a0", "#93c56a", "#4f9a46", "#21652a"],
+    "contribColors3": ["#e4e0d5", "#fcd9a8", "#f8a85c", "#f0662a", "#c2410c"],
+    "contribColors4": ["#e4e0d5", "#c3e3ef", "#7cc2dc", "#3a93bd", "#1d5f8a"]
+  },
+  {
+    "type": "season",
+    "fileName": "city-dark.svg",
+    "backgroundColor": "#131210",
+    "foregroundColor": "#ece8dd",
+    "strongColor": "#f0662a",
+    "weakColor": "#9a9588",
+    "radarColor": "#f0662a",
+    "growingAnimation": true,
+    "contribColors1": ["#26241f", "#5c3348", "#93496f", "#c76699", "#f09cc6"],
+    "contribColors2": ["#26241f", "#2f4a2a", "#4b7a3d", "#76ad57", "#b4dc84"],
+    "contribColors3": ["#26241f", "#5a3317", "#9a4c1c", "#f0662a", "#ffa35f"],
+    "contribColors4": ["#26241f", "#1f3d52", "#2d6788", "#4a9cc4", "#8fd0ea"]
+  }
+]
