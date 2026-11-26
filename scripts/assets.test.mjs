@@ -6,8 +6,10 @@ import { renderRoute, renderChip } from './motion.mjs';
 import { renderCard } from './card.mjs';
 import { renderTyping, renderFetch } from './terminal.mjs';
 import { renderOrbit, PROJECTS } from './orbit.mjs';
+import { renderWork, renderProjects, WORK, CARDS } from './sections.mjs';
 
 const dir = new URL('../assets/tech', import.meta.url).pathname;
+const icons = new URL('../assets/icons', import.meta.url).pathname;
 const logo = readFileSync(new URL('../assets/logo/ascii.txt', import.meta.url), 'utf8');
 const weeks = [{ contributionDays: [{ date: '2026-11-02', contributionCount: 3, contributionLevel: 'SECOND_QUARTILE' }] }];
 
@@ -36,6 +38,17 @@ for (const theme of ['light', 'dark']) {
     const svg = renderOrbit({ theme });
     assert.equal((svg.match(/fill="url\(#g\d+\)"/g) ?? []).length, PROJECTS.length);
     assert.doesNotMatch(svg, /<image/);
+    assertSafe(svg);
+  });
+  test(`work ${theme}: one row and icon per job, one node in accent`, () => {
+    const svg = renderWork({ theme, dir: icons });
+    assert.equal((svg.match(/<image /g) ?? []).length, WORK.length);
+    assert.equal((svg.match(/<circle /g) ?? []).length, WORK.length + 1); // + the current job's ping ring
+    assertSafe(svg);
+  });
+  test(`projects ${theme}: one card per project`, () => {
+    const svg = renderProjects({ theme, dir: icons });
+    assert.equal((svg.match(/<image /g) ?? []).length, CARDS.length);
     assertSafe(svg);
   });
   test(`card ${theme} animations guarded`, () =>
