@@ -70,7 +70,7 @@ const lines = [
   `${fmt(lastYear)} contributions in the last 12 months`,
   'shipping from Cebu, Philippines, remote',
 ];
-const clock = new Date(`${today}T00:00:00Z`).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+const clock = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'Asia/Manila' }); // build day in Cebu
 const rows = [
   ['OS', 'Cebu, Philippines (UTC+8)'],
   ['Host', 'Traciety, AI Engineer'],
