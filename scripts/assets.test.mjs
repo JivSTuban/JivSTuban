@@ -6,7 +6,7 @@ import { renderRoute, renderChip } from './motion.mjs';
 import { renderCard } from './card.mjs';
 import { renderTyping, renderFetch } from './terminal.mjs';
 import { renderOrbit, PROJECTS } from './orbit.mjs';
-import { renderWork, renderProjects, WORK, CARDS } from './sections.mjs';
+import { renderEntryCard, WORK, PROJECTS_CARDS } from './cards.mjs';
 
 const dir = new URL('../assets/tech', import.meta.url).pathname;
 const icons = new URL('../assets/icons', import.meta.url).pathname;
@@ -40,17 +40,14 @@ for (const theme of ['light', 'dark']) {
     assert.doesNotMatch(svg, /<image/);
     assertSafe(svg);
   });
-  test(`work ${theme}: one row and icon per job, one node in accent`, () => {
-    const svg = renderWork({ theme, dir: icons });
-    assert.equal((svg.match(/<image /g) ?? []).length, WORK.length);
-    assert.equal((svg.match(/<circle /g) ?? []).length, WORK.length + 1); // + the current job's ping ring
-    assertSafe(svg);
-  });
-  test(`projects ${theme}: one card per project`, () => {
-    const svg = renderProjects({ theme, dir: icons });
-    assert.equal((svg.match(/<image /g) ?? []).length, CARDS.length);
-    assertSafe(svg);
-  });
+  for (const entry of [...WORK, ...PROJECTS_CARDS]) {
+    test(`entry card ${entry.slug} ${theme}: icon embedded, every figure shown`, () => {
+      const svg = renderEntryCard({ theme, entry, dir: icons });
+      assert.equal((svg.match(/<image /g) ?? []).length, 1);
+      for (const [v] of entry.figs) assert.ok(svg.includes(`>${v.replace('&', '&amp;')}<`), v);
+      assertSafe(svg);
+    });
+  }
   test(`card ${theme} animations guarded`, () =>
     assertSafe(renderCard({ theme, allTime: 1, lastYear: 1, current: 1, longest: 1, weeks, rev: '2026-11-02' })));
 }
