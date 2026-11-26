@@ -7,13 +7,9 @@
 ## Work
 
 <a href="https://traciety.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/work-traciety-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/work-traciety-light.svg" alt="Traciety, AI Engineer, full-time: Moved the automations off Make.com onto self-hosted n8n. 98% less spend, 45 clinics, 97% attributed." width="100%"></picture></a>
-
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/work-ayahay-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/work-ayahay-light.svg" alt="Ayahay, Software Engineer Intern: Rebuilt a multi-tenant RAG chatbot as NestJS microservices. 40% faster, 57% more recall." width="100%"></picture>
-
 <a href="https://crowdsnare.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/work-crowdsnare-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/work-crowdsnare-light.svg" alt="Crowdsnare AI, Technical Lead: Speed-to-lead agents that text, qualify and book car buyers. 90% booked, 11 cars sold, 10+ dealers." width="100%"></picture></a>
-
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/work-cfai-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/work-cfai-light.svg" alt="Cinematography for Actors Institute, AI Automation Developer: Email replies drafted from 50+ SOPs on Google Cloud Run. 70% faster, 85+ lighthouse." width="100%"></picture>
-
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/work-freckles-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/work-freckles-light.svg" alt="Freckles Graphics, Full-stack Developer: A print workflow for a $12M+ a year apparel shop. 500+ orders/day, 85% less manual." width="100%"></picture>
 
 <details>
@@ -52,19 +48,12 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/orbit-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/orbit-light.svg" alt="Projects as a solar system: AutoApply, weewoo, Knowledge Base SDK, Austin McClain, Keilah's Cakes, OJTech, Navigram, GAssure." width="100%"></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/project-autoapply-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/project-autoapply-light.svg" alt="AutoApply: Reads a resume, scores the fit, fills and sends the application. 11 users, 377 tests." width="100%"></picture>
-
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/project-weewoo-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/project-weewoo-light.svg" alt="weewoo: Location sharing and chat, end-to-end encrypted. 36 rls policies, 223 tests." width="100%"></picture>
-
 <a href="https://github.com/JivSTuban/knowledge-base-sdk"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/project-kbsdk-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/project-kbsdk-light.svg" alt="Knowledge Base SDK: Train on your docs, stream answers into a whitelabel chat. RAG pgvector, SSE streaming." width="100%"></picture></a>
-
 <a href="https://austinmcclain.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/project-austin-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/project-austin-light.svg" alt="Austin McClain: A realtor portfolio fed by automated MLS listings. 119+ listings, $13.5M in value." width="100%"></picture></a>
-
 <a href="https://keilahs.shop"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/project-keilah-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/project-keilah-light.svg" alt="Keilah's Cakes: A bakery storefront with a fast image pipeline. 95+ lighthouse." width="100%"></picture></a>
-
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/project-ojtech-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/project-ojtech-light.svg" alt="OJTech: Matches students to internships with NLP recommendations. NLP matching." width="100%"></picture>
-
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/project-navigram-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/project-navigram-light.svg" alt="Navigram: Memories pinned to places, with real-time chat. GEO indexed, LIVE chat." width="100%"></picture>
-
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/project-gassure-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/project-gassure-light.svg" alt="GAssure: Escrow that holds the money until the item arrives. #1 of 196 teams, 980 students." width="100%"></picture>
 
 <details>
