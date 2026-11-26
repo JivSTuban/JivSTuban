@@ -5,14 +5,16 @@
 //   typing-{light,dark}.svg  terminal prompt typing true lines
 //   fetch-{light,dark}.svg   neofetch readout with the ASCII portrait and live stats
 //   orbit-{light,dark}.svg   projects as a solar system
-//   work-<slug>-{light,dark}.svg, project-<slug>-{light,dark}.svg  a now-playing strip per job, an album per project
+//   work-<slug>-{light,dark}.svg  a now-playing strip per job
+//   projects-{light,dark}.svg  the projects in a Windows 95 Explorer window
 //   GH_TOKEN=... node scripts/build.mjs [outDir]
 // The workflow publishes the output to the `output` branch; the README reads it from there.
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { renderCard, streaks, fmt, THEMES } from './card.mjs';
 import { renderTyping, renderFetch, uptime } from './terminal.mjs';
 import { renderOrbit } from './orbit.mjs';
-import { renderEntryCard, renderAlbum, WORK, PROJECTS_CARDS } from './cards.mjs';
+import { renderEntryCard, WORK, PROJECTS_CARDS } from './cards.mjs';
+import { renderExplorer } from './explorer.mjs';
 import { renderStack } from './stack.mjs';
 import { renderChip } from './motion.mjs';
 
@@ -68,6 +70,7 @@ const lines = [
   `${fmt(lastYear)} contributions in the last 12 months`,
   'shipping from Cebu, Philippines, remote',
 ];
+const clock = new Date(`${today}T00:00:00Z`).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
 const rows = [
   ['OS', 'Cebu, Philippines (UTC+8)'],
   ['Host', 'Traciety, AI Engineer'],
@@ -86,7 +89,7 @@ for (const theme of Object.keys(THEMES)) {
   writeFileSync(`${out}/fetch-${theme}.svg`, renderFetch({ theme, art: readFileSync(`${root}assets/portrait/ascii-${theme}.txt`, 'utf8'), colors: JSON.parse(readFileSync(`${root}assets/portrait/colors-${theme}.json`, 'utf8')), rows }));
   writeFileSync(`${out}/orbit-${theme}.svg`, renderOrbit({ theme }));
   for (const entry of WORK) writeFileSync(`${out}/work-${entry.slug}-${theme}.svg`, renderEntryCard({ theme, entry }));
-  for (const entry of PROJECTS_CARDS) writeFileSync(`${out}/project-${entry.slug}-${theme}.svg`, renderAlbum({ theme, entry }));
+  writeFileSync(`${out}/projects-${theme}.svg`, renderExplorer({ projects: PROJECTS_CARDS, clock }));
   writeFileSync(`${out}/stack-${theme}.svg`, renderStack({ theme, dir: tech }));
   for (const [file, label, icon] of [['linkedin', 'LinkedIn', 'LinkedIn'], ['email', 'Email', 'Email'], ['portfolio', 'Portfolio', 'Portfolio'], ['cv', 'CV (PDF)', 'CV']]) {
     writeFileSync(`${out}/chip-${file}-${theme}.svg`, renderChip({ theme, label, icon, dir: tech }));

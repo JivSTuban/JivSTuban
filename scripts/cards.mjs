@@ -1,6 +1,6 @@
 // One strip per job, after the Spotify "now playing" cards (github.com/kittinan/spotify-github-profile):
 // drawn cover art, the name as the track, the role or what it does as the artist, the figures underneath. Jobs get the
-// progress bar with their dates; the current job is the one playing. Projects are albums (renderAlbum). Every figure on a strip is a fact from the README.
+// progress bar with their dates; the current job is the one playing. Every figure on a strip is a fact from the README.
 // Motion is CSS behind prefers-reduced-motion: no-preference; the resting state is a paused frame.
 import { THEMES, SANS, MONO } from './card.mjs';
 
@@ -133,31 +133,3 @@ ${progress}
 `;
 }
 
-/**
- * One album for the projects shelf, three to a row in the README: a big cover, the name, the stack as the artist,
- * the figures underneath. The rings on the cover breathe.
- */
-export function renderAlbum({ theme, entry }) {
-  const t = { ...THEMES[theme], ...EXTRA[theme] };
-  const AW = 280;
-  const name = entry.name.join(' ');
-  const size = Math.min(26, Math.floor(AW / (name.length * 0.6)));
-  const figs = entry.figs
-    .map(([v, l], i) => `<text x="0" y="${374 + i * 24}" font-family='${MONO}' font-size="17" font-weight="700" fill="${t.accent}">${esc(v)}</text><text x="${v.length * 10.2 + 8}" y="${374 + i * 24}" font-family='${MONO}' font-size="16" fill="${t.ink}">${esc(l)}</text>`)
-    .join('');
-  const AH = 374 + 24 + 34; // room for two figures, so albums in a row line up
-  const label = `${name}, ${entry.eyebrow.toLowerCase()}. ${entry.head.join(' ')} ${entry.figs.map(([v, l]) => `${v} ${l}`).join(', ')}.`;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${AW}" height="${AH}" viewBox="0 0 ${AW} ${AH}" role="img" aria-label="${esc(label)}">
-<style>
-@media (prefers-reduced-motion: no-preference){
-  .rg{animation:rg 6s ease-in-out infinite alternate}
-  @keyframes rg{from{transform:scale(1)}to{transform:scale(1.12)}}
-}
-</style>
-${cover(entry, 0, 0, AW)}
-<text x="0" y="${AW + 36}" font-family='${SANS}' font-size="${size}" font-weight="800" letter-spacing="-0.5" fill="${t.ink}">${esc(name)}</text>
-<text x="0" y="${AW + 60}" font-family='${MONO}' font-size="14" letter-spacing="1" fill="${t.muted}">${esc(entry.eyebrow)}</text>
-${figs}
-</svg>
-`;
-}

@@ -6,7 +6,8 @@ import { renderChip } from './motion.mjs';
 import { renderCard } from './card.mjs';
 import { renderTyping, renderFetch } from './terminal.mjs';
 import { renderOrbit, PROJECTS } from './orbit.mjs';
-import { renderEntryCard, renderAlbum, WORK, PROJECTS_CARDS } from './cards.mjs';
+import { renderEntryCard, WORK, PROJECTS_CARDS } from './cards.mjs';
+import { renderExplorer } from './explorer.mjs';
 
 const dir = new URL('../assets/tech', import.meta.url).pathname;
 const logo = readFileSync(new URL('../assets/logo/ascii.txt', import.meta.url), 'utf8');
@@ -40,14 +41,23 @@ for (const theme of ['light', 'dark']) {
     assert.doesNotMatch(svg, /<image/);
     assertSafe(svg);
   });
-  for (const entry of [...WORK, ...PROJECTS_CARDS]) {
+  for (const entry of WORK) {
     test(`entry card ${entry.slug} ${theme}: no images, every figure shown`, () => {
-      const svg = (WORK.includes(entry) ? renderEntryCard : renderAlbum)({ theme, entry });
+      const svg = renderEntryCard({ theme, entry });
       assert.doesNotMatch(svg, /<image /);
       for (const [v] of entry.figs) assert.ok(svg.includes(`>${v.replace('&', '&amp;')}<`), v);
       assertSafe(svg);
     });
   }
+  test(`projects explorer ${theme}: every project and figure, one selection each`, () => {
+    const svg = renderExplorer({ projects: PROJECTS_CARDS, clock: 'Nov 27' });
+    for (const p of PROJECTS_CARDS) {
+      assert.ok(svg.includes(`>${p.name.join(' ')}<`), p.slug);
+      for (const [v] of p.figs) assert.ok(svg.includes(`>${v}<`), v);
+    }
+    assert.equal((svg.match(/<g class="s\d+">/g) ?? []).length, PROJECTS_CARDS.length * 2);
+    assertSafe(svg);
+  });
   test(`card ${theme} animations guarded`, () =>
     assertSafe(renderCard({ theme, allTime: 1, lastYear: 1, current: 1, longest: 1, weeks, rev: '2026-11-02' })));
 }
