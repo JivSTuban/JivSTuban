@@ -4,8 +4,6 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/city-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/city-light.svg" alt="3D contribution calendar for the last 12 months, coloured by season, with a language chart and an activity radar." width="100%"></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/route-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/route-light.svg" alt="" width="100%"></picture>
-
 ## Work
 
 <a href="https://traciety.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/work-traciety-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/work-traciety-light.svg" alt="Traciety, AI Engineer, full-time: Moved the automations off Make.com onto self-hosted n8n. 98% less spend, 45 clinics, 97% attributed." width="100%"></picture></a>
@@ -84,8 +82,6 @@
 </table>
 
 </details>
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/route-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/route-light.svg" alt="" width="100%"></picture>
 
 ## Contact
 

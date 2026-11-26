@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { renderStack } from './stack.mjs';
-import { renderRoute, renderChip } from './motion.mjs';
+import { renderChip } from './motion.mjs';
 import { renderCard } from './card.mjs';
 import { renderTyping, renderFetch } from './terminal.mjs';
 import { renderOrbit, PROJECTS } from './orbit.mjs';
@@ -26,7 +26,6 @@ for (const theme of ['light', 'dark']) {
     assert.equal((svg.match(/<image /g) ?? []).length, 33);
     assertSafe(svg);
   });
-  test(`route ${theme}`, () => assertSafe(renderRoute(theme)));
   for (const icon of ['LinkedIn', 'Email', 'Portfolio', 'CV']) {
     test(`chip ${icon} ${theme}`, () => assertSafe(renderChip({ theme, label: icon, icon, dir })));
   }
