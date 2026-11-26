@@ -1,9 +1,8 @@
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/card-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/card-light.svg" alt="Jiv Tuban, AI Engineer at Traciety. Live GitHub contribution totals, streaks and a 52-week activity grid." width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/typing-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/typing-light.svg" alt="Terminal prompt typing: I build AI automation for US startups. Cut automation spend 98% at Traciety. 1st of 196 teams at GCash ImaGnation 2025. Shipping from Cebu, Philippines, remote." width="100%"></picture>
 
-<table>
-<tr><td width="72" align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/automation-dark.png"><img src="assets/icons/automation-light.png" width="56" alt="Connected workflow nodes"></picture></td><td>I build AI automation and full-stack products for US startups: workflow orchestration, RAG pipelines, and web apps tied to revenue. BS Information Technology, Cebu Institute of Technology University, graduated May 2026. Based in Cebu, Philippines, working remote.</td></tr>
-<tr><td width="72" align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/trophy-dark.png"><img src="assets/icons/trophy-light.png" width="56" alt="Trophy"></picture></td><td><b>GCash ImaGnation 2025:</b> 1st place out of 196 teams (980 students), with GAssure, a blockchain escrow on Solana.</td></tr>
-</table>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/fetch-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/fetch-light.svg" alt="Jiv Tuban, AI Engineer at Traciety, as a neofetch readout next to an ASCII portrait: based in Cebu, Philippines; BS Information Technology, Cebu Institute of Technology University, class of 2026; 1st place out of 196 teams at GCash ImaGnation 2025; live GitHub contribution totals and streak." width="100%"></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/city-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/city-light.svg" alt="3D contribution calendar for the last 12 months, coloured by season, with a language chart and an activity radar." width="100%"></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/route-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/route-light.svg" alt="" width="100%"></picture>
 
@@ -36,6 +35,8 @@
 **Certifications:** Anthropic Academy (18 certificates, Jun 2026), AWS Academy Cloud Architecting and Cloud Foundations, Udemy Python and Django, .NET 8 Web API, PHP, Angular.
 
 ## Projects
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/orbit-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/orbit-light.svg" alt="Projects as a solar system around Jiv: AutoApply, weewoo, Knowledge Base SDK, Austin McClain, Keilah's Cakes, OJTech, Navigram, GAssure." width="100%"></picture>
 
 <table>
 <tr><td width="72" align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/autoapply-dark.png"><img src="assets/icons/autoapply-light.png" width="56" alt="Form with a paper plane"></picture></td><td><b>AutoApply</b>: multi-tenant job application engine used by 11 people. Parses resumes, scores fit with chained AI models, submits through Playwright and ATS integrations. 377 passing tests.<br><sub>Node.js, Playwright, Supabase, React, TypeScript, OpenAI</sub></td></tr>
