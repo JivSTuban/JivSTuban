@@ -4,7 +4,6 @@
 //   chip-<name>-{light,dark}.svg  contact links
 //   typing-{light,dark}.svg  terminal prompt typing true lines
 //   fetch-{light,dark}.svg   neofetch readout with the ASCII portrait and live stats
-//   orbit-{light,dark}.svg   projects as a solar system
 //   work-<slug>-{light,dark}.svg  a now-playing strip per job
 //   projects-{light,dark}.svg  the projects in a Windows 95 Explorer window
 //   GH_TOKEN=... node scripts/build.mjs [outDir]
@@ -12,7 +11,6 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { renderCard, streaks, fmt, THEMES } from './card.mjs';
 import { renderTyping, renderFetch, uptime } from './terminal.mjs';
-import { renderOrbit } from './orbit.mjs';
 import { renderEntryCard, WORK, PROJECTS_CARDS } from './cards.mjs';
 import { renderExplorer } from './explorer.mjs';
 import { renderStack } from './stack.mjs';
@@ -87,7 +85,6 @@ mkdirSync(out, { recursive: true });
 for (const theme of Object.keys(THEMES)) {
   writeFileSync(`${out}/typing-${theme}.svg`, renderTyping({ theme, lines }));
   writeFileSync(`${out}/fetch-${theme}.svg`, renderFetch({ theme, art: readFileSync(`${root}assets/portrait/ascii-${theme}.txt`, 'utf8'), colors: JSON.parse(readFileSync(`${root}assets/portrait/colors-${theme}.json`, 'utf8')), rows }));
-  writeFileSync(`${out}/orbit-${theme}.svg`, renderOrbit({ theme }));
   for (const entry of WORK) writeFileSync(`${out}/work-${entry.slug}-${theme}.svg`, renderEntryCard({ theme, entry }));
   writeFileSync(`${out}/projects-${theme}.svg`, renderExplorer({ projects: PROJECTS_CARDS, clock }));
   writeFileSync(`${out}/stack-${theme}.svg`, renderStack({ theme, dir: tech }));
