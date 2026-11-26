@@ -16,7 +16,7 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/stack-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/stack-light.svg" alt="Technology stack: Claude, OpenAI, n8n, Playwright, Python, TensorFlow, React, Next.js, TypeScript, Tailwind, Angular, Vue, Flutter, Dart, NestJS, Spring, FastAPI, Django, Flask, Laravel, .NET, Node.js, AWS, GCP, DigitalOcean, Supabase, PostgreSQL, MySQL, Docker, Git, GitHub, VS Code, Linux" width="100%"></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/certs-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/certs-light.svg" alt="Certifications: Anthropic Academy, 18 certificates, Jun 2026. AWS Academy Cloud Architecting and Cloud Foundations. Udemy Python and Django Full Stack, Web API in .NET 8, PHP Full Stack, Angular Complete Guide." width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/certs-dark.svg"><img src="https://raw.githubusercontent.com/JivSTuban/JivSTuban/output/certs-light.svg" alt="Certifications. Anthropic: Claude Code in Action, Building with the Claude API, MCP Introduction, MCP Advanced Topics, Agent Skills, Subagents. AWS Academy: Cloud Architecting, Cloud Foundations. Udemy: Python and Django Full Stack, Web API in .NET 8, PHP Full Stack, Angular Complete Guide. Accenture Digital Skills: UX. freeCodeCamp: Foundational C# with Microsoft. CodeChum: Java OOP." width="100%"></picture>
 
 ## Projects
 
