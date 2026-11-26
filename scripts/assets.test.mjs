@@ -6,7 +6,7 @@ import { renderChip } from './motion.mjs';
 import { renderCard } from './card.mjs';
 import { renderTyping, renderFetch } from './terminal.mjs';
 import { renderOrbit, PROJECTS } from './orbit.mjs';
-import { renderEntryCard, WORK, PROJECTS_CARDS } from './cards.mjs';
+import { renderEntryCard, renderAlbum, WORK, PROJECTS_CARDS } from './cards.mjs';
 
 const dir = new URL('../assets/tech', import.meta.url).pathname;
 const logo = readFileSync(new URL('../assets/logo/ascii.txt', import.meta.url), 'utf8');
@@ -40,7 +40,7 @@ for (const theme of ['light', 'dark']) {
   });
   for (const entry of [...WORK, ...PROJECTS_CARDS]) {
     test(`entry card ${entry.slug} ${theme}: no images, every figure shown`, () => {
-      const svg = renderEntryCard({ theme, entry });
+      const svg = (WORK.includes(entry) ? renderEntryCard : renderAlbum)({ theme, entry });
       assert.doesNotMatch(svg, /<image /);
       for (const [v] of entry.figs) assert.ok(svg.includes(`>${v.replace('&', '&amp;')}<`), v);
       assertSafe(svg);

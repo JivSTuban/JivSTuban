@@ -1,6 +1,6 @@
-// One strip per job and per project, after the Spotify "now playing" cards (github.com/kittinan/spotify-github-profile):
+// One strip per job, after the Spotify "now playing" cards (github.com/kittinan/spotify-github-profile):
 // drawn cover art, the name as the track, the role or what it does as the artist, the figures underneath. Jobs get the
-// progress bar with their dates; the current job is the one playing. Every figure on a strip is a fact from the README.
+// progress bar with their dates; the current job is the one playing. Projects are albums (renderAlbum). Every figure on a strip is a fact from the README.
 // Motion is CSS behind prefers-reduced-motion: no-preference; the resting state is a paused frame.
 import { THEMES, SANS, MONO } from './card.mjs';
 
@@ -36,12 +36,12 @@ export const PROJECTS_CARDS = [
 ];
 
 
-/** Album-style cover: the entry's colours, rings off one corner, its name set small in the bottom left. */
-function cover(entry, x, y) {
+/** Album-style cover, s wide at (x, y): the entry's colours, rings off one corner, its name set in the bottom left. */
+function cover(entry, x, y, s = C) {
   const [dark, light] = entry.color;
   const seed = [...entry.slug].reduce((a, ch) => (a * 31 + ch.charCodeAt(0)) % 997, 7);
-  const cx = x + (seed % 2 ? C * 0.78 : C * 0.22);
-  const cy = y + C * (0.18 + (seed % 5) * 0.06);
+  const cx = seed % 2 ? C * 0.78 : C * 0.22;
+  const cy = C * (0.18 + (seed % 5) * 0.06);
   const rings = [1, 2, 3, 4].map((k) => `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${16 + k * 17}" fill="none" stroke="#fff" stroke-opacity="${(0.32 - k * 0.06).toFixed(2)}" stroke-width="1.5"/>`).join('');
   const words = entry.name.join(' ').split(' ');
   const lines = [];
@@ -52,10 +52,10 @@ function cover(entry, x, y) {
   }
   const title = lines
     .slice(-3)
-    .map((l, i, a) => `<text x="${x + 12}" y="${y + C - 14 - (a.length - 1 - i) * 17}" font-family='${SANS}' font-size="15" font-weight="800" letter-spacing="-0.2" fill="#fff">${esc(l)}</text>`)
+    .map((l, i, a) => `<text x="12" y="${C - 14 - (a.length - 1 - i) * 17}" font-family='${SANS}' font-size="15" font-weight="800" letter-spacing="-0.2" fill="#fff">${esc(l)}</text>`)
     .join('');
-  return `<defs><linearGradient id="cv" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="${dark}"/><stop offset="1" stop-color="${light}"/></linearGradient><clipPath id="cc"><rect x="${x}" y="${y}" width="${C}" height="${C}" rx="10"/></clipPath></defs>
-<g clip-path="url(#cc)"><rect x="${x}" y="${y}" width="${C}" height="${C}" fill="url(#cv)"/><circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="22" fill="#fff" fill-opacity=".22"/>${rings}<rect x="${x}" y="${y + C * 0.55}" width="${C}" height="${C * 0.45}" fill="#000" fill-opacity=".18"/>${title}</g>`;
+  return `<defs><linearGradient id="cv" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="${dark}"/><stop offset="1" stop-color="${light}"/></linearGradient><clipPath id="cc"><rect width="${C}" height="${C}" rx="10"/></clipPath></defs>
+<g transform="translate(${x} ${y}) scale(${(s / C).toFixed(4)})"><g clip-path="url(#cc)"><rect width="${C}" height="${C}" fill="url(#cv)"/><g class="rg" style="transform-origin:${cx.toFixed(1)}px ${cy.toFixed(1)}px"><circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="22" fill="#fff" fill-opacity=".22"/>${rings}</g><rect y="${C * 0.55}" width="${C}" height="${C * 0.45}" fill="#000" fill-opacity=".18"/>${title}</g></g>`;
 }
 
 /** "Mon YYYY" pair from an eyebrow like "APR — OCT 2025" or "APR 2026 — NOW". */
@@ -129,6 +129,35 @@ ${eq}
 <text x="${X}" y="${job ? 104 : 110}" font-family='${SANS}' font-size="20" fill="${t.muted}">${esc(sub)}</text>
 ${figs}
 ${progress}
+</svg>
+`;
+}
+
+/**
+ * One album for the projects shelf, three to a row in the README: a big cover, the name, the stack as the artist,
+ * the figures underneath. The rings on the cover breathe.
+ */
+export function renderAlbum({ theme, entry }) {
+  const t = { ...THEMES[theme], ...EXTRA[theme] };
+  const AW = 280;
+  const name = entry.name.join(' ');
+  const size = Math.min(26, Math.floor(AW / (name.length * 0.6)));
+  const figs = entry.figs
+    .map(([v, l], i) => `<text x="0" y="${374 + i * 24}" font-family='${MONO}' font-size="17" font-weight="700" fill="${t.accent}">${esc(v)}</text><text x="${v.length * 10.2 + 8}" y="${374 + i * 24}" font-family='${MONO}' font-size="16" fill="${t.ink}">${esc(l)}</text>`)
+    .join('');
+  const AH = 374 + 24 + 34; // room for two figures, so albums in a row line up
+  const label = `${name}, ${entry.eyebrow.toLowerCase()}. ${entry.head.join(' ')} ${entry.figs.map(([v, l]) => `${v} ${l}`).join(', ')}.`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${AW}" height="${AH}" viewBox="0 0 ${AW} ${AH}" role="img" aria-label="${esc(label)}">
+<style>
+@media (prefers-reduced-motion: no-preference){
+  .rg{animation:rg 6s ease-in-out infinite alternate}
+  @keyframes rg{from{transform:scale(1)}to{transform:scale(1.12)}}
+}
+</style>
+${cover(entry, 0, 0, AW)}
+<text x="0" y="${AW + 36}" font-family='${SANS}' font-size="${size}" font-weight="800" letter-spacing="-0.5" fill="${t.ink}">${esc(name)}</text>
+<text x="0" y="${AW + 60}" font-family='${MONO}' font-size="14" letter-spacing="1" fill="${t.muted}">${esc(entry.eyebrow)}</text>
+${figs}
 </svg>
 `;
 }
