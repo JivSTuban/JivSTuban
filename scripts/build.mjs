@@ -23,7 +23,6 @@ const token = process.env.GH_TOKEN;
 if (!token) throw new Error('GH_TOKEN is required');
 const root = new URL('..', import.meta.url).pathname;
 const tech = `${root}assets/tech`;
-const icons = `${root}assets/icons`;
 
 async function gql(query) {
   const res = await fetch('https://api.github.com/graphql', {
@@ -88,8 +87,8 @@ for (const theme of Object.keys(THEMES)) {
   writeFileSync(`${out}/typing-${theme}.svg`, renderTyping({ theme, lines }));
   writeFileSync(`${out}/fetch-${theme}.svg`, renderFetch({ theme, art: logo, rows, accentLines: 3 }));
   writeFileSync(`${out}/orbit-${theme}.svg`, renderOrbit({ theme }));
-  for (const entry of WORK) writeFileSync(`${out}/work-${entry.slug}-${theme}.svg`, renderEntryCard({ theme, entry, dir: icons }));
-  for (const entry of PROJECTS_CARDS) writeFileSync(`${out}/project-${entry.slug}-${theme}.svg`, renderEntryCard({ theme, entry, dir: icons }));
+  for (const entry of WORK) writeFileSync(`${out}/work-${entry.slug}-${theme}.svg`, renderEntryCard({ theme, entry }));
+  for (const entry of PROJECTS_CARDS) writeFileSync(`${out}/project-${entry.slug}-${theme}.svg`, renderEntryCard({ theme, entry }));
   writeFileSync(`${out}/stack-${theme}.svg`, renderStack({ theme, dir: tech }));
   writeFileSync(`${out}/route-${theme}.svg`, renderRoute(theme));
   for (const [file, label, icon] of [['linkedin', 'LinkedIn', 'LinkedIn'], ['email', 'Email', 'Email'], ['portfolio', 'Portfolio', 'Portfolio'], ['cv', 'CV (PDF)', 'CV']]) {

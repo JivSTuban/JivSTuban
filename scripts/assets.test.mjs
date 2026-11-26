@@ -9,7 +9,6 @@ import { renderOrbit, PROJECTS } from './orbit.mjs';
 import { renderEntryCard, WORK, PROJECTS_CARDS } from './cards.mjs';
 
 const dir = new URL('../assets/tech', import.meta.url).pathname;
-const icons = new URL('../assets/icons', import.meta.url).pathname;
 const logo = readFileSync(new URL('../assets/logo/ascii.txt', import.meta.url), 'utf8');
 const weeks = [{ contributionDays: [{ date: '2026-11-02', contributionCount: 3, contributionLevel: 'SECOND_QUARTILE' }] }];
 
@@ -41,9 +40,9 @@ for (const theme of ['light', 'dark']) {
     assertSafe(svg);
   });
   for (const entry of [...WORK, ...PROJECTS_CARDS]) {
-    test(`entry card ${entry.slug} ${theme}: icon embedded, every figure shown`, () => {
-      const svg = renderEntryCard({ theme, entry, dir: icons });
-      assert.equal((svg.match(/<image /g) ?? []).length, 1);
+    test(`entry card ${entry.slug} ${theme}: no images, every figure shown`, () => {
+      const svg = renderEntryCard({ theme, entry });
+      assert.doesNotMatch(svg, /<image /);
       for (const [v] of entry.figs) assert.ok(svg.includes(`>${v.replace('&', '&amp;')}<`), v);
       assertSafe(svg);
     });

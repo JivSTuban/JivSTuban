@@ -3,7 +3,6 @@
 // Scenes are illustrations of the product, drawn in vectors; every figure on a card is a fact from the README.
 // Motion is CSS keyframes on one loop per card, behind prefers-reduced-motion: no-preference. The resting state
 // is the finished scene, so a still image (or reduced motion) shows the end of the story.
-import { readFileSync } from 'node:fs';
 import { THEMES, SANS, MONO } from './card.mjs';
 
 const W = 888;
@@ -326,37 +325,38 @@ const SCENES = {
 };
 
 export const WORK = [
-  { slug: 'traciety', scene: 'traciety', icon: 'medspa', eyebrow: 'APR 2026 — NOW', name: ['Traciety'], role: 'AI Engineer, full-time', head: ['Moved the automations', 'off Make.com onto', 'self-hosted n8n.'], figs: [['98%', 'LESS SPEND'], ['45', 'CLINICS'], ['97%', 'ATTRIBUTED']], title: 'n8n · bookings', href: 'https://traciety.com' },
-  { slug: 'ayahay', scene: 'ayahay', icon: 'ferry', eyebrow: 'NOV 2025 — MAR 2026', name: ['Ayahay'], role: 'Software Engineer Intern', head: ['Rebuilt a multi-tenant', 'RAG chatbot as NestJS', 'microservices.'], figs: [['40%', 'FASTER'], ['57%', 'MORE RECALL']], title: 'ayahay · assistant' },
-  { slug: 'crowdsnare', scene: 'crowdsnare', icon: 'car', eyebrow: 'APR — OCT 2025', name: ['Crowdsnare AI'], role: 'Technical Lead', head: ['Speed-to-lead agents', 'that text, qualify and', 'book car buyers.'], figs: [['90%', 'BOOKED'], ['11', 'CARS SOLD'], ['10+', 'DEALERS']], title: 'speed-to-lead agent', href: 'https://crowdsnare.com/' },
-  { slug: 'cfai', scene: 'cfai', icon: 'clapper', eyebrow: 'JUL 2025 — JAN 2026', name: ['Cinematography', 'for Actors Institute'], role: 'AI Automation Developer', head: ['Email replies drafted', 'from 50+ SOPs on', 'Google Cloud Run.'], figs: [['70%', 'FASTER'], ['85+', 'LIGHTHOUSE']], title: 'inbox · auto-reply' },
-  { slug: 'freckles', scene: 'freckles', icon: 'print', eyebrow: 'JUL 2024 — MAR 2025', name: ['Freckles Graphics'], role: 'Full-stack Developer', head: ['A print workflow for a', '$12M+ a year apparel', 'shop.'], figs: [['500+', 'ORDERS/DAY'], ['85%', 'LESS MANUAL']], title: 'print queue' },
+  { slug: 'traciety', scene: 'traciety', eyebrow: 'APR 2026 — NOW', name: ['Traciety'], role: 'AI Engineer, full-time', head: ['Moved the automations', 'off Make.com onto', 'self-hosted n8n.'], figs: [['98%', 'LESS SPEND'], ['45', 'CLINICS'], ['97%', 'ATTRIBUTED']], title: 'n8n · bookings', href: 'https://traciety.com' },
+  { slug: 'ayahay', scene: 'ayahay', eyebrow: 'NOV 2025 — MAR 2026', name: ['Ayahay'], role: 'Software Engineer Intern', head: ['Rebuilt a multi-tenant', 'RAG chatbot as NestJS', 'microservices.'], figs: [['40%', 'FASTER'], ['57%', 'MORE RECALL']], title: 'ayahay · assistant' },
+  { slug: 'crowdsnare', scene: 'crowdsnare', eyebrow: 'APR — OCT 2025', name: ['Crowdsnare AI'], role: 'Technical Lead', head: ['Speed-to-lead agents', 'that text, qualify and', 'book car buyers.'], figs: [['90%', 'BOOKED'], ['11', 'CARS SOLD'], ['10+', 'DEALERS']], title: 'speed-to-lead agent', href: 'https://crowdsnare.com/' },
+  { slug: 'cfai', scene: 'cfai', eyebrow: 'JUL 2025 — JAN 2026', name: ['Cinematography', 'for Actors Institute'], role: 'AI Automation Developer', head: ['Email replies drafted', 'from 50+ SOPs on', 'Google Cloud Run.'], figs: [['70%', 'FASTER'], ['85+', 'LIGHTHOUSE']], title: 'inbox · auto-reply' },
+  { slug: 'freckles', scene: 'freckles', eyebrow: 'JUL 2024 — MAR 2025', name: ['Freckles Graphics'], role: 'Full-stack Developer', head: ['A print workflow for a', '$12M+ a year apparel', 'shop.'], figs: [['500+', 'ORDERS/DAY'], ['85%', 'LESS MANUAL']], title: 'print queue' },
 ];
 
 export const PROJECTS_CARDS = [
-  { slug: 'autoapply', scene: 'autoapply', icon: 'autoapply', eyebrow: 'MULTI-TENANT · PLAYWRIGHT', name: ['AutoApply'], head: ['Reads a resume, scores', 'the fit, fills and sends', 'the application.'], figs: [['11', 'USERS'], ['377', 'TESTS']], title: 'autoapply · apply' },
-  { slug: 'weewoo', scene: 'weewoo', icon: 'privacy', eyebrow: 'FLUTTER · LIBSODIUM', name: ['weewoo'], head: ['Location sharing and', 'chat, end-to-end', 'encrypted.'], figs: [['36', 'RLS POLICIES'], ['223', 'TESTS']], title: 'weewoo · live' },
-  { slug: 'kbsdk', scene: 'kbsdk', icon: 'sdk', eyebrow: 'OPEN SOURCE · TYPESCRIPT', name: ['Knowledge Base', 'SDK'], head: ['Train on your docs,', 'stream answers into a', 'whitelabel chat.'], figs: [['RAG', 'PGVECTOR'], ['SSE', 'STREAMING']], title: 'knowledge-base-sdk', href: 'https://github.com/JivSTuban/knowledge-base-sdk' },
-  { slug: 'austin', scene: 'austin', icon: 'house', eyebrow: 'REAL ESTATE · REACT', name: ['Austin McClain'], head: ['A realtor portfolio fed', 'by automated MLS', 'listings.'], figs: [['119+', 'LISTINGS'], ['$13.5M', 'IN VALUE']], title: 'austinmcclain.com', href: 'https://austinmcclain.com' },
-  { slug: 'keilah', scene: 'keilah', icon: 'cake', eyebrow: 'STOREFRONT · NEXT.JS', name: ["Keilah's Cakes"], head: ['A bakery storefront', 'with a fast image', 'pipeline.'], figs: [['95+', 'LIGHTHOUSE']], title: 'keilahs.shop', href: 'https://keilahs.shop' },
-  { slug: 'ojtech', scene: 'ojtech', icon: 'internship', eyebrow: 'SPRING BOOT · GEMINI', name: ['OJTech'], head: ['Matches students to', 'internships with NLP', 'recommendations.'], figs: [['NLP', 'MATCHING']], title: 'ojtech · matches' },
-  { slug: 'navigram', scene: 'navigram', icon: 'map', eyebrow: 'SPRING BOOT · WEBSOCKETS', name: ['Navigram'], head: ['Memories pinned to', 'places, with real-time', 'chat.'], figs: [['GEO', 'INDEXED'], ['LIVE', 'CHAT']], title: 'navigram · map' },
-  { slug: 'gassure', scene: 'gassure', icon: 'escrow', eyebrow: 'SOLANA · REACT', name: ['GAssure'], head: ['Escrow that holds the', 'money until the item', 'arrives.'], figs: [['#1', 'OF 196 TEAMS'], ['980', 'STUDENTS']], title: 'gassure · escrow' },
+  { slug: 'autoapply', scene: 'autoapply', eyebrow: 'MULTI-TENANT · PLAYWRIGHT', name: ['AutoApply'], head: ['Reads a resume, scores', 'the fit, fills and sends', 'the application.'], figs: [['11', 'USERS'], ['377', 'TESTS']], title: 'autoapply · apply' },
+  { slug: 'weewoo', scene: 'weewoo', eyebrow: 'FLUTTER · LIBSODIUM', name: ['weewoo'], head: ['Location sharing and', 'chat, end-to-end', 'encrypted.'], figs: [['36', 'RLS POLICIES'], ['223', 'TESTS']], title: 'weewoo · live' },
+  { slug: 'kbsdk', scene: 'kbsdk', eyebrow: 'OPEN SOURCE · TYPESCRIPT', name: ['Knowledge Base', 'SDK'], head: ['Train on your docs,', 'stream answers into a', 'whitelabel chat.'], figs: [['RAG', 'PGVECTOR'], ['SSE', 'STREAMING']], title: 'knowledge-base-sdk', href: 'https://github.com/JivSTuban/knowledge-base-sdk' },
+  { slug: 'austin', scene: 'austin', eyebrow: 'REAL ESTATE · REACT', name: ['Austin McClain'], head: ['A realtor portfolio fed', 'by automated MLS', 'listings.'], figs: [['119+', 'LISTINGS'], ['$13.5M', 'IN VALUE']], title: 'austinmcclain.com', href: 'https://austinmcclain.com' },
+  { slug: 'keilah', scene: 'keilah', eyebrow: 'STOREFRONT · NEXT.JS', name: ["Keilah's Cakes"], head: ['A bakery storefront', 'with a fast image', 'pipeline.'], figs: [['95+', 'LIGHTHOUSE']], title: 'keilahs.shop', href: 'https://keilahs.shop' },
+  { slug: 'ojtech', scene: 'ojtech', eyebrow: 'SPRING BOOT · GEMINI', name: ['OJTech'], head: ['Matches students to', 'internships with NLP', 'recommendations.'], figs: [['NLP', 'MATCHING']], title: 'ojtech · matches' },
+  { slug: 'navigram', scene: 'navigram', eyebrow: 'SPRING BOOT · WEBSOCKETS', name: ['Navigram'], head: ['Memories pinned to', 'places, with real-time', 'chat.'], figs: [['GEO', 'INDEXED'], ['LIVE', 'CHAT']], title: 'navigram · map' },
+  { slug: 'gassure', scene: 'gassure', eyebrow: 'SOLANA · REACT', name: ['GAssure'], head: ['Escrow that holds the', 'money until the item', 'arrives.'], figs: [['#1', 'OF 196 TEAMS'], ['980', 'STUDENTS']], title: 'gassure · escrow' },
 ];
 
-/** One card. entry: { name[], role?, eyebrow, head[], figs[[value, label]], icon, scene, title }. dir: assets/icons */
-export function renderEntryCard({ theme, entry, dir }) {
+/** One card. entry: { name[], role?, eyebrow, head[], figs[[value, label]], scene, title }. */
+export function renderEntryCard({ theme, entry }) {
   const t = { ...THEMES[theme], ...EXTRA[theme] };
   const m = motion();
   const k = kit(t, m);
   const stage = SCENES[entry.scene](t, k, m);
 
   // left panel
-  const icon = `<image href="data:image/png;base64,${readFileSync(`${dir}/${entry.icon}-${theme}.png`).toString('base64')}" x="26" y="56" width="54" height="54"/>`;
-  const nameSize = Math.min(entry.name.length > 1 ? 25 : 32, Math.floor(248 / (Math.max(...entry.name.map((l) => l.length)) * 0.56)));
-  const name = entry.name.map((l, i) => `<text x="92" y="${entry.name.length > 1 ? 80 + i * 28 : 96}" font-family='${SANS}' font-size="${nameSize}" font-weight="700" fill="${t.ink}">${esc(l)}</text>`).join('');
-  const headY = entry.role ? 162 : 148;
-  const role = entry.role ? `<text x="28" y="140" font-family='${SANS}' font-size="18" font-weight="600" fill="${t.muted}">${esc(entry.role)}</text>` : '';
+  const two = entry.name.length > 1;
+  const nameSize = Math.min(two ? 28 : 38, Math.floor(296 / (Math.max(...entry.name.map((l) => l.length)) * 0.56)));
+  const name = entry.name.map((l, i) => `<text x="28" y="${two ? 80 + i * 32 : 94}" font-family='${SANS}' font-size="${nameSize}" font-weight="700" letter-spacing="-0.5" fill="${t.ink}">${esc(l)}</text>`).join('');
+  const drop = two ? 10 : 0;
+  const headY = (entry.role ? 162 : 148) + drop;
+  const role = entry.role ? `<text x="28" y="${140 + drop}" font-family='${SANS}' font-size="18" font-weight="600" fill="${t.muted}">${esc(entry.role)}</text>` : '';
   const head = entry.head.map((l, i) => `<text x="28" y="${headY + 6 + i * 27}" font-family='${SANS}' font-size="21" fill="${t.ink}">${esc(l)}</text>`).join('');
   let fx = 28;
   const figs = entry.figs
@@ -379,7 +379,7 @@ ${m.rest()}
 </style>
 <rect width="${W}" height="${H}" fill="${t.paper}"/>
 <text x="28" y="40" font-family='${MONO}' font-size="14" letter-spacing="1.5" fill="${t.muted}">${esc(entry.eyebrow)}</text>
-${icon}${name}${role}${head}${figs}
+${name}${role}${head}${figs}
 <rect x="${SX}" y="${SY}" width="${SW}" height="${SH}" rx="12" fill="${t.card}" stroke="${t.ink}" stroke-width="1.5"/>
 <line x1="${SX}" y1="${SY + 34}" x2="${SX + SW}" y2="${SY + 34}" stroke="${t.line}" stroke-width="1.5"/>
 ${[0, 1, 2].map((i) => `<circle cx="${SX + 20 + i * 16}" cy="${SY + 17}" r="5" fill="${t.line}"/>`).join('')}
