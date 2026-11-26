@@ -1,6 +1,9 @@
 // The terminal pieces at the top of the README: a prompt that types true lines, and a neofetch-style readout.
 // Motion is CSS inside the SVG, wrapped in prefers-reduced-motion: no-preference; the resting state shows
 // the first line fully typed and every readout row in place.
+// The portraits in assets/portrait are the GitHub avatar, cut out with macOS Vision person segmentation,
+// scaled to 60x32 with ffmpeg, histogram-equalised and mapped to ' .:-=+*#%@' (light: dark pixels dense; dark: bright
+// pixels dense); colors-<theme>.json holds each character's colour from the photo.
 // assets/logo/ascii.txt is "jiv" in Arial Black with a diagonal shade, scaled to 52x26 with ffmpeg and mapped
 // to ' .:-=+*#%@', dense where the letter is dark. It reads as ink on paper and as light on the dark theme.
 import { THEMES, MONO } from './card.mjs';
@@ -92,16 +95,18 @@ ${lines.map((l, p) => text(tx, l, t.ink, `p${p}`)).join('\n')}
 /**
  * neofetch: the ASCII logo on the left, key/value rows on the right, a palette strip under them.
  * rows: [key, value, accent?]. The logo's first `accentLines` lines (the dots) take the accent.
+ * colors (optional): one hex colour per character of `art`, row by row, so a portrait keeps the photo's colours.
  * Rows and logo lines boot in top to bottom.
  */
-export function renderFetch({ theme, art, rows, accentLines = 0 }) {
+export function renderFetch({ theme, art, rows, accentLines = 0, colors }) {
   const t = THEMES[theme];
   const lines = art.replace(/\n+$/, '').split('\n');
-  const artSize = 14;
-  const artPitch = 8.4;
-  const artLead = 15.5;
   const ax = 24;
   const ix = 418;
+  // the art gets the column left of the readout; the 60-column portrait fits at 6.2px a character
+  const artPitch = Math.min(8.4, (ix - ax - 24) / Math.max(...lines.map((l) => l.length)));
+  const artSize = artPitch / 0.6;
+  const artLead = artPitch * 1.85;
   const size = 16;
   const cw = 9.6;
   const lead = 27;
@@ -116,7 +121,18 @@ export function renderFetch({ theme, art, rows, accentLines = 0 }) {
       const lead0 = l.length - l.trimStart().length;
       const s = l.trimStart();
       if (!s) return '';
-      return `<text class="b" style="animation-delay:${i * 28}ms" x="${(ax + lead0 * artPitch).toFixed(1)}" y="${(ay + i * artLead).toFixed(1)}" font-family='${MONO}' font-size="${artSize}" textLength="${(s.length * artPitch).toFixed(1)}" fill="${i < accentLines ? t.accent : t.ink}" xml:space="preserve">${esc(s)}</text>`;
+      let body = esc(s);
+      if (colors) {
+        // runs of one colour become one tspan; spaces join the run before them
+        const runs = [];
+        [...s].forEach((ch, k) => {
+          const c = colors[i][lead0 + k] || runs[runs.length - 1]?.[0] || t.ink;
+          if (runs.length && runs[runs.length - 1][0] === c) runs[runs.length - 1][1] += ch;
+          else runs.push([c, ch]);
+        });
+        body = runs.map(([c, run]) => `<tspan fill="${c}">${esc(run)}</tspan>`).join('');
+      }
+      return `<text class="b" style="animation-delay:${i * 28}ms" x="${(ax + lead0 * artPitch).toFixed(1)}" y="${(ay + i * artLead).toFixed(1)}" font-family='${MONO}' font-size="${artSize}"${colors ? ' font-weight="700"' : ''} textLength="${(s.length * artPitch).toFixed(1)}" fill="${i < accentLines ? t.accent : t.ink}" xml:space="preserve">${body}</text>`;
     })
     .join('');
 

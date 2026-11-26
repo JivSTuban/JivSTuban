@@ -3,7 +3,7 @@
 //   stack-{light,dark}.svg   animated technology grid
 //   chip-<name>-{light,dark}.svg  contact links
 //   typing-{light,dark}.svg  terminal prompt typing true lines
-//   fetch-{light,dark}.svg   neofetch readout with the ASCII logo and live stats
+//   fetch-{light,dark}.svg   neofetch readout with the ASCII portrait and live stats
 //   orbit-{light,dark}.svg   projects as a solar system
 //   work-<slug>-{light,dark}.svg, project-<slug>-{light,dark}.svg  a now-playing strip per job, an album per project
 //   GH_TOKEN=... node scripts/build.mjs [outDir]
@@ -79,12 +79,11 @@ const rows = [
   ['Contribs', `${fmt(allTime)} all time, ${fmt(lastYear)} in 12 months`],
   ['Streak', `${current} days, longest ${longest}`, true],
 ];
-const logo = readFileSync(`${root}assets/logo/ascii.txt`, 'utf8');
 
 mkdirSync(out, { recursive: true });
 for (const theme of Object.keys(THEMES)) {
   writeFileSync(`${out}/typing-${theme}.svg`, renderTyping({ theme, lines }));
-  writeFileSync(`${out}/fetch-${theme}.svg`, renderFetch({ theme, art: logo, rows, accentLines: 3 }));
+  writeFileSync(`${out}/fetch-${theme}.svg`, renderFetch({ theme, art: readFileSync(`${root}assets/portrait/ascii-${theme}.txt`, 'utf8'), colors: JSON.parse(readFileSync(`${root}assets/portrait/colors-${theme}.json`, 'utf8')), rows }));
   writeFileSync(`${out}/orbit-${theme}.svg`, renderOrbit({ theme }));
   for (const entry of WORK) writeFileSync(`${out}/work-${entry.slug}-${theme}.svg`, renderEntryCard({ theme, entry }));
   for (const entry of PROJECTS_CARDS) writeFileSync(`${out}/project-${entry.slug}-${theme}.svg`, renderAlbum({ theme, entry }));

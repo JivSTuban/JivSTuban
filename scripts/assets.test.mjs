@@ -30,6 +30,8 @@ for (const theme of ['light', 'dark']) {
     test(`chip ${icon} ${theme}`, () => assertSafe(renderChip({ theme, label: icon, icon, dir })));
   }
   test(`typing ${theme}`, () => assertSafe(renderTyping({ theme, lines: ['one line', 'two, lines'] })));
+  test(`fetch portrait ${theme}`, () =>
+    assertSafe(renderFetch({ theme, art: readFileSync(new URL(`../assets/portrait/ascii-${theme}.txt`, import.meta.url), 'utf8'), colors: JSON.parse(readFileSync(new URL(`../assets/portrait/colors-${theme}.json`, import.meta.url), 'utf8')), rows: [['OS', 'Cebu']] })));
   test(`fetch ${theme}`, () =>
     assertSafe(renderFetch({ theme, art: logo, rows: [['OS', 'Cebu'], ['Streak', '3 days', true]], accentLines: 3 })));
   test(`orbit ${theme}: one planet per project, no images`, () => {
