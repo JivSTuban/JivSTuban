@@ -1,0 +1,8 @@
+[Unit]
+Description=Profile card: rebuild README images and publish to the output branch
+After=network-online.target
+
+[Service]
+Type=oneshot
+TimeoutStartSec=600
+ExecStart=/bin/bash %h/profile-card/src/scripts/refresh.sh

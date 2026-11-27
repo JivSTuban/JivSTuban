@@ -1,5 +1,6 @@
 name: Profile card
 
+# Fallback builder: jiv-server runs scripts/refresh.sh hourly (GitHub fires this schedule about twice a day).
 # Rebuilds the README images (scripts/build.mjs, plus the 3D contribution city) and publishes them to
 # the `output` branch, which the README reads. Replaces the third-party stats widgets, which
 # were hosted on public Vercel instances that went down (503 and 402) and left broken images.
