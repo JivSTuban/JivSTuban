@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="888" height="188" viewBox="0 0 888 188" role="img" aria-label="Cinematography for Actors Institute, AI Automation Developer, jul 2025 — jan 2026. Email replies drafted from 50+ SOPs on Google Cloud Run. 70% faster, 85+ Lighthouse.">
+<style>
+@media (prefers-reduced-motion: no-preference){
+  @keyframes q{from{transform:scaleY(.2)}to{transform:scaleY(1)}}
+  .q0{animation:q 0.70s ease-in-out 0.00s infinite alternate}.q1{animation:q 0.96s ease-in-out -0.21s infinite alternate}.q2{animation:q 1.22s ease-in-out -0.42s infinite alternate}.q3{animation:q 0.83s ease-in-out -0.63s infinite alternate}.q4{animation:q 1.09s ease-in-out -0.84s infinite alternate}
+  @keyframes fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  @keyframes knob{from{transform:translateX(0)}to{transform:translateX(492px)}}
+  .fill{animation:fill 40s linear -24.8s infinite}
+  .knob{animation:knob 40s linear -24.8s infinite}
+}
+.q{transform-box:fill-box;transform-origin:50% 100%}
+</style>
+<rect x="0.75" y="0.75" width="886.5" height="174.5" rx="16" fill="#fbf9f4" stroke="#dcd7cb" stroke-width="1.5"/>
+<defs><linearGradient id="cv" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#4c1d95"/><stop offset="1" stop-color="#c084fc"/></linearGradient><clipPath id="cc"><rect width="140" height="140" rx="10"/></clipPath></defs>
+<g transform="translate(18 18) scale(1.0000)"><g clip-path="url(#cc)"><rect width="140" height="140" fill="url(#cv)"/><g class="rg" style="transform-origin:109.2px 58.8px"><circle cx="109.2" cy="58.8" r="22" fill="#fff" fill-opacity=".22"/><circle cx="109.2" cy="58.8" r="33" fill="none" stroke="#fff" stroke-opacity="0.26" stroke-width="1.5"/><circle cx="109.2" cy="58.8" r="50" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="1.5"/><circle cx="109.2" cy="58.8" r="67" fill="none" stroke="#fff" stroke-opacity="0.14" stroke-width="1.5"/><circle cx="109.2" cy="58.8" r="84" fill="none" stroke="#fff" stroke-opacity="0.08" stroke-width="1.5"/></g><rect y="77" width="140" height="63" fill="#000" fill-opacity=".18"/><text x="12" y="92" font-family='-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif' font-size="15" font-weight="800" letter-spacing="-0.2" fill="#fff">Cinematography</text><text x="12" y="109" font-family='-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif' font-size="15" font-weight="800" letter-spacing="-0.2" fill="#fff">for Actors</text><text x="12" y="126" font-family='-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif' font-size="15" font-weight="800" letter-spacing="-0.2" fill="#fff">Institute</text></g></g>
+<text x="180" y="40" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="14" font-weight="400" letter-spacing="1.5" fill="#6b675e">PLAYED</text>
+<circle cx="846" cy="36" r="18" fill="#c2410c"/><path d="M840 27 L855 36 L840 45 Z" fill="#f4f1ea"/>
+<text x="180" y="78" font-family='-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif' font-size="30" font-weight="800" letter-spacing="-0.6" fill="#1d1c1a">Cinematography for Actors Institute</text>
+<text x="180" y="104" font-family='-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif' font-size="20" fill="#6b675e">AI Automation Developer</text>
+<text x="180" y="128" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="20" font-weight="700" fill="#c2410c">70%</text><text x="224" y="128" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="19" fill="#1d1c1a">faster</text><text x="322.4" y="128" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="20" font-weight="700" fill="#c2410c">85+</text><text x="366.4" y="128" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="19" fill="#1d1c1a">Lighthouse</text>
+<text x="180" y="158" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="14" fill="#6b675e">JUL 2025</text>
+<text x="864" y="158" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="14" text-anchor="end" fill="#6b675e">JAN 2026</text>
+<rect x="276" y="151" width="492" height="5" rx="2.5" fill="#e4e0d5"/>
+<rect class="" x="276" y="151" width="492" height="5" rx="2.5" fill="#6b675e" style="transform-box:fill-box;transform-origin:0 50%;transform:scaleX(1)"/>
+
+</svg>
